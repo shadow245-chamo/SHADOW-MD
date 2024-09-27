@@ -198,7 +198,7 @@ cmd({
     try {
         let wm = '*ꜱʜᴀᴅᴏᴡ ᴍᴅ ᴡᴀᴛꜱ ᴀᴘᴘ ʙᴏᴛ ⚟*'
         const category = q.trim().toUpperCase();
-        let commandList = `*◈╾──────${category} SUB COMMAND LIST──────╼◈*\n\n> Select you want command type and enjoy vajira md whatsapp bot 👨‍💻\n\n`;
+        let commandList = `*◈╾──────${category} SUB COMMAND LIST──────╼◈*\n\n> Select you want command type and enjoy shadow md whatsapp bot 👨‍💻\n\n`;
 
         for (let i = 0; i < commands.length; i++) {
             const cmd = commands[i];
