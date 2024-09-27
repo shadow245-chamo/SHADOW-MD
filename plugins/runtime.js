@@ -15,6 +15,34 @@ try{
 
 let status =` *🚀 Runtime:-  ${runtime(process.uptime())}* `
 return reply(`${status}`)
+//await conn.sendMessage(from, { text: commandList }, { quoted: mek });
+    
+    await conn.sendMessage(from, {
+text: commandList,
+  contextInfo: {
+    mentionedJid: [ '' ],
+    groupMentions: [],
+    forwardingScore: 1111,
+    isForwarded: true,
+    forwardedNewsletterMessageInfo: {
+      newsletterJid: '120363290448968237@newsletter',
+      serverMessageId: 127
+    },
+externalAdReply: { 
+title: 'ꜱʜᴀᴅᴏᴡ ᴍᴅ ᴡᴀᴛꜱ ᴀᴘᴘ ʙᴏᴛ ⚟',
+body: 'ᴀ ꜱɪᴍᴘʟᴇ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ',
+mediaType: 1,
+sourceUrl: "https://whatsapp.com/channel/0029Val6g7EBadmagKxuYi1R" ,
+thumbnailUrl: `https://i.imgur.com/2p7gHUD.jpeg` ,
+renderLargerThumbnail: true,
+showAdAttribution: false
+}
+}}, { quoted: mek})
+    } catch (e) {
+        reply('*Error !!*')
+        console.log(e)
+    }
+})
 }catch(e){
 console.log(e)
 reply(`${e}`)
