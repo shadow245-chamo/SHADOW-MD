@@ -102,6 +102,7 @@ async function connectToWA() {
             });
             console.log('Plugins installed ✅')
             console.log('Bot connected ✅')
+            
             let up = `🚀SHADOW-MD CONNECTED SUCCESSFUL✅ 
 
 👑WELCOM TO SHADOW MD MULTIDEVICE WHATSAPP BOT👑
