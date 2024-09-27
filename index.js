@@ -40,7 +40,7 @@ const {
 const path = require('path')
 const msgRetryCounterCache = new NodeCache()
 const prefix = '.'
-const ownerNumber = ['94725881990']
+const ownerNumber = ['94767910958']
 //===================SESSION============================
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
     if (config.SESSION_ID) {
@@ -103,7 +103,7 @@ async function connectToWA() {
             console.log('Plugins installed ✅')
             console.log('Bot connected ✅')
             await conn.sendMessage("1@s.whatsapp.net", {
-                text: "Connected to whatsapp"
+                text: "Connected to whatsapp💗"
             })
         }
     })
