@@ -45,7 +45,7 @@ cmd({
 > *Runtime:* ${runtime(process.uptime())}
 > *Platform:* ${hostname}
     
-*🍭 Have A Nice Day 🍭*`
+*🚀 WELCOM TO SHADOW MD 🚀*`
 
             let buttons = [{
                     name: "cta_url",
@@ -159,8 +159,8 @@ ${monspace}👋 Hello ${pushname}${monspace}
                 name: "cta_url",
                     buttonParamsJson: JSON.stringify({
                         display_text: '',
-                        url: 'https://whatsapp.com/channel/0029Vajn0gb8F2pFh7PDqO0c',
-                        merchant_url: 'https://whatsapp.com/channel/0029Vajn0gb8F2pFh7PDqO0c'
+                        url: 'https://whatsapp.com/channel/0029Val6g7EBadmagKxuYi1R',
+                        merchant_url: 'https://whatsapp.com/channel/0029Val6g7EBadmagKxuYi1R'
                 }),
             },
             {
