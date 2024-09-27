@@ -102,8 +102,25 @@ async function connectToWA() {
             });
             console.log('Plugins installed ✅')
             console.log('Bot connected ✅')
-            await conn.sendMessage("1@s.whatsapp.net", {
-                text: "Connected to whatsapp💗"
+            let up = `🚀SHADOW-MD CONNECTED SUCCESSFUL✅ 
+
+👑WELCOM TO SHADOW MD MULTIDEVICE WHATSAPP BOT👑
+
+*🚀 OWNER:  Lakshan damayantha 👨‍💻 
+
+*🔹 CONTACT : https://wa.me/+94767910958
+
+  🚀 PREFIX:*   (  .  )
+
+> THANK FOR YOU USING MY BOT  *👨‍💻SHADOW MD👨‍💻*
+> You can give happiness to others as well as yourself with this bot 💗🚀
+> This bot is the first bot I made, so let me know if there is anything wrong 😸💭
+
+*⛓JOIN IN MY WHATSAPP GROUP - :* https://whatsapp.com/channel/0029Val6g7EBadmagKxuYi1R
+
+ρσɯҽԃ Ⴆყ 𝙻𝙰𝙺𝚂𝙷𝙰𝙽 𝚃𝙴𝙲𝙻𝙾𝙻𝙾𝙶𝚈 ꪶ🕊🍒*`;
+            await conn.sendMessage("1@s.whatsapp.net", {image: { url: `https://i.imgur.com/pJ5WluK.jpeg` }, caption: up })
+
             })
         }
     })
