@@ -225,7 +225,7 @@ externalAdReply: {
 title: 'ꜱʜᴀᴅᴏᴡ ᴍᴅ ᴡᴀᴛꜱ ᴀᴘᴘ ʙᴏᴛ ⚟',
 body: 'ᴀ ꜱɪᴍᴘʟᴇ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ',
 mediaType: 1,
-sourceUrl: "https://whatsapp.com/channel/0029Vajn0gb8F2pFh7PDqO0c" ,
+sourceUrl: "https://whatsapp.com/channel/0029Val6g7EBadmagKxuYi1R" ,
 thumbnailUrl: `https://i.imgur.com/2p7gHUD.jpeg` ,
 renderLargerThumbnail: true,
 showAdAttribution: false
