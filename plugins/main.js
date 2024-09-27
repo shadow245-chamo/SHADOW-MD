@@ -38,7 +38,7 @@ cmd({
             let monspace = '```'
             const sssf = `${monspace}👋 Hello ${pushname} I'm alive now${monspace}
 
-*👾 Im Nebula-MD whatsapp bot*
+*👨‍💻 Im SHADOW-MD whatsapp bot*
     
 > *Version:* ${require("../package.json").version}
 > *Memory:* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
@@ -64,7 +64,7 @@ cmd({
                 }
             ]
             let opts = {
-                image: config.LOGO,
+                image: `https://i.imgur.com/Mkp0Z9o.jpeg`,
                 header: '',
                 footer: config.FOOTER,
                 body: sssf
@@ -106,90 +106,133 @@ cmd({
     })
 
 cmd({
-        pattern: "menu",
-        react: "🗃️",
-        alias: ["panel", "list", "commands"],
-        desc: "Get bot\'s command list.",
-        category: "other",
-        use: '.menu',
-        filename: __filename
-    },
-    async (conn, mek, m, {
-        from,
-        pushname,
-        reply
-    }) => {
-        try {
-            if (os.hostname().length == 12) hostname = 'replit'
-            else if (os.hostname().length == 36) hostname = 'heroku'
-            else if (os.hostname().length == 8) hostname = 'koyeb'
-            else hostname = os.hostname()
-            let monspace = '```'
-            const MNG = `${monspace}👋 Hello ${pushname}${monspace}
+    pattern: "menu",
+    react: "📖",
+    alias: ["panel", "list", "commands", "cmd"],
+    desc: "Get bot\'s command list.",
+    category: "main",
+    use: '.menu',
+    filename: __filename
+}, async (conn, mek, m, { from, prefix, pushname, reply }) => {
+    try {
+        let wm = `ꜱʜᴀᴅᴏᴡ ᴍᴅ ᴡᴀᴛꜱ ᴀᴘᴘ ʙᴏᴛ ⚟`
+        if (os.hostname().length == 12) hostname = 'replit'
+        else if (os.hostname().length == 36) hostname = 'heroku'
+        else if (os.hostname().length == 8) hostname = 'koyeb'
+        else hostname = os.hostname()
+        let monspace = '```'
+            const MNG = `ꜱʜᴀᴅᴏᴡ ᴍᴅ ᴡᴀᴛꜱ ᴀᴘᴘ ʙᴏᴛ ⚟
+	    
+${monspace}👋 Hello ${pushname}${monspace}
 
-*👾 Nebula-MD commands menu...*
-  
-> *Version:* ${require("../package.json").version}
-> *Memory:* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-> *Runtime:* ${runtime(process.uptime())}
-> *Platform:* ${hostname}`
+
+ *🚀𝙑𝙀𝙍𝙎𝙄𝙊𝙉:* ${require("../package.json").version}
+ *⌛𝙈𝙀𝙈𝙊𝙍𝙔:* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+ *📍𝙋𝙇𝘼𝙏𝙁𝙊𝙍𝙈:* ${hostname}
+`
             const categories = [];
-            const categoryMap = new Map();
+        const categoryMap = new Map();
 
-            for (let i = 0; i < commands.length; i++) {
-                const cmd = commands[i];
-                if (!cmd.dontAddCommandList && cmd.pattern !== undefined) {
-                    const category = cmd.category.toUpperCase();
-                    if (!categoryMap.has(category)) {
-                        categories.push(category);
-                        categoryMap.set(category, []);
-                    }
-                    categoryMap.get(category).push(cmd.pattern);
+        for (let i = 0; i < commands.length; i++) {
+            const cmd = commands[i];
+            if (!cmd.dontAddCommandList && cmd.pattern !== undefined) {
+                const category = cmd.category.toUpperCase();
+                if (!categoryMap.has(category)) {
+                    categories.push(category);
+                    categoryMap.set(category, []);
                 }
+                categoryMap.get(category).push(cmd.pattern);
             }
-            const rows = []
-            for (const category of categories) {
-
-                rows.push({
-                    header: '',
-                    title: `${category} MENU`,
-                    description: '',
-                    id: `.menu`
-                })
-
-            }
-            let buttons = [{
-                    name: "cta_url",
-                    buttonParamsJson: JSON.stringify({
-                        display_text: config.BTN,
-                        url: config.BTNURL,
-                        merchant_url: config.BTNURL
-                    }),
-                },
-                {
-                    name: "single_select",
-                    buttonParamsJson: JSON.stringify({
-                        title: 'Select a Category :)',
-                        sections: [{
-                            title: 'Please select a category',
-                            highlight_label: 'NEBULA-MD',
-                            rows: rows
-
-                        }]
-                    }),
-                }
-
-            ]
-            let opts = {
-                image: config.LOGO,
-                header: '',
-                footer: config.FOOTER,
-                body: MNG
-
-            }
-            return await conn.sendButtonMessage(from, buttons, m, opts)
-        } catch (e) {
-            reply('*Error !!*')
-            console.log(e)
         }
-    })
+
+        const rows = []
+        for (const category of categories) {
+            rows.push({
+                header: '',
+                title: `${category} MENU`,
+                description: '',
+                id: `${prefix}category ${category}`
+            })
+        }
+
+        let buttons = [{
+                name: "cta_url",
+                    buttonParamsJson: JSON.stringify({
+                        display_text: '',
+                        url: 'https://whatsapp.com/channel/0029Vajn0gb8F2pFh7PDqO0c',
+                        merchant_url: 'https://whatsapp.com/channel/0029Vajn0gb8F2pFh7PDqO0c'
+                }),
+            },
+            {
+                name: "single_select",
+                buttonParamsJson: JSON.stringify({
+                    title: 'SHADOW MD BOT MAIN MENU',
+                    sections: [{
+                        title: 'Please select a SubMenu',
+                        highlight_label: 'ꜱʜᴀᴅᴏᴡ-ᴍᴅ',
+                        rows: rows
+                    }]
+                }),
+            }
+        ]
+
+        let opts = {
+            image: `https://i.imgur.com/NAK3YWD.jpeg`,
+            header: '',
+            footer: wm,
+            body: MNG
+        }
+
+        return await conn.sendButtonMessage(from, buttons, m, opts)
+    } catch (e) {
+        reply('*Error !!*')
+        console.log(e)
+    }
+})
+
+cmd({
+    pattern: "category",
+    dontAddCommandList: true,
+    filename: __filename
+}, async (conn, mek, m, { from, q, reply }) => {
+    try {
+        let wm = '*ꜱʜᴀᴅᴏᴡ ᴍᴅ ᴡᴀᴛꜱ ᴀᴘᴘ ʙᴏᴛ ⚟*'
+        const category = q.trim().toUpperCase();
+        let commandList = `*◈╾──────${category} SUB COMMAND LIST──────╼◈*\n\n> Select you want command type and enjoy vajira md whatsapp bot 👨‍💻\n\n`;
+
+        for (let i = 0; i < commands.length; i++) {
+            const cmd = commands[i];
+            if (cmd.category.toUpperCase() === category) {
+                commandList += `╭────────●●►\n│ • *${cmd.pattern}* \n╰────────────────────●●►\n`;
+            }
+        }
+
+        commandList += `\n⭓ *Total Commands List ${category}*: ${commands.filter(cmd => cmd.category.toUpperCase() === category).length}\n\n${wm}`
+
+        //await conn.sendMessage(from, { text: commandList }, { quoted: mek });
+        await conn.sendMessage(from, {
+text: commandList,
+  contextInfo: {
+    mentionedJid: [ '' ],
+    groupMentions: [],
+    forwardingScore: 1111,
+    isForwarded: true,
+    forwardedNewsletterMessageInfo: {
+      newsletterJid: '120363290448968237@newsletter',
+      serverMessageId: 127
+    },
+externalAdReply: { 
+title: 'ꜱʜᴀᴅᴏᴡ ᴍᴅ ᴡᴀᴛꜱ ᴀᴘᴘ ʙᴏᴛ ⚟',
+body: 'ᴀ ꜱɪᴍᴘʟᴇ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ',
+mediaType: 1,
+sourceUrl: "https://whatsapp.com/channel/0029Vajn0gb8F2pFh7PDqO0c" ,
+thumbnailUrl: `https://i.imgur.com/2p7gHUD.jpeg` ,
+renderLargerThumbnail: true,
+showAdAttribution: false
+}
+}}, { quoted: mek})
+    } catch (e) {
+        reply('*Error !!*')
+        console.log(e)
+    }
+})
