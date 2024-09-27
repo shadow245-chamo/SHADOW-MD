@@ -1,9 +1,9 @@
 {
-    "name": "nebula-md",
-    "version": "1.0.0",
+    "name": "SHADOW-md",
+    "version": "6.0.0",
     "scripts": {
-        "start": "pm2 start index.js --deep-monitoring --attach --name nebula",
-        "stop": "pm2 stop nebula",
+        "start": "pm2 start index.js --deep-monitoring --attach --name SHADOW",
+        "stop": "pm2 stop SHADOW",
         "restart": "pm2 restart nebula && pm2 logs",
         "stash": "git stash && git stash drop"
     },
