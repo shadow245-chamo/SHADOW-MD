@@ -496,9 +496,9 @@ async function connectToWA() {
     })
 }
 app.get("/", (req, res) => {
-    res.send("📟 Nebula Working successfully!");
+    res.send("🚀 SHADOW Working successfully!");
 });
-app.listen(port, () => console.log(`Nebula Server listening on port http://localhost:${port}`));
+app.listen(port, () => console.log(`SHADOW Server listening on port http://localhost:${port}`));
 setTimeout(async () => {
     await connectToWA()
 }, 1000);
