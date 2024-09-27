@@ -42,9 +42,3 @@ showAdAttribution: false
         reply('*Error !!*')
         console.log(e)
     }
-})
-}catch(e){
-console.log(e)
-reply(`${e}`)
-}
-})
