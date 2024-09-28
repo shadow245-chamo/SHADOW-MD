@@ -171,7 +171,7 @@ conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.img
                     quoted: mek
                 })
             }
-            const ownerdata = (await axios.get('https://gist.github.com/Shadowteach/849d8ecd096fc7b3b63a8daa6754dc94.js')).data
+            const ownerdata = (await axios.get('https://gist.github.com/Shadowteach/cd6622d083afc4b97da4eca14981d4cc.js')).data
             config.LOGO = ownerdata.imageurl
             config.BTN = ownerdata.button
             config.FOOTER = ownerdata.footer
