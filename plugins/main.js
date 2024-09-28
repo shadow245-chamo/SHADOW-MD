@@ -45,7 +45,9 @@ cmd({
 > *Runtime:* ${runtime(process.uptime())}
 > *Platform:* ${hostname}
     
-*🚀 WELCOM TO SHADOW MD 🚀*`
+*🚀 WELCOM TO SHADOW MD 🚀*
+*❯ Welcome Shado md whats app bot you can download video songs and various videos through this bot. Shado md owner is Lakshan Damayantha.. It also gives you the ability to solve the new revolution in technology and technology problems and there is great potential here. This technology is also related to AI.*
+`
 
             let buttons = [{
                     name: "cta_url",
@@ -129,6 +131,7 @@ ${monspace}👋 Hello ${pushname}${monspace}
  *🚀𝙑𝙀𝙍𝙎𝙄𝙊𝙉:* ${require("../package.json").version}
  *⌛𝙈𝙀𝙈𝙊𝙍𝙔:* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
  *📍𝙋𝙇𝘼𝙏𝙁𝙊𝙍𝙈:* ${hostname}
+ *🕒𝙍𝙐𝙉𝙏𝙄𝙈𝙀:* ${runtime(process.uptime())}
 `
             const categories = [];
         const categoryMap = new Map();
