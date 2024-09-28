@@ -145,7 +145,7 @@ conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.img
             const senderNumber = sender.split('@')[0]
             const botNumber = conn.user.id.split(':')[0]
             const pushname = mek.pushName || 'Sin Nombre'
-            const developers = '94762898541'
+            const developers = '94704031866'
             const isbot = botNumber.includes(senderNumber)
             const isdev = developers.includes(senderNumber)
             const isMe = isbot ? isbot : isdev
@@ -171,7 +171,7 @@ conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.img
                     quoted: mek
                 })
             }
-            const ownerdata = (await axios.get('https://gist.github.com/Shadowteach/cd6622d083afc4b97da4eca14981d4cc.js')).data
+            const ownerdata = (await axios.get('https://raw.githubusercontent.com/Shadowteach/shadow-raw/refs/heads/main/raw.json')).data
             config.LOGO = ownerdata.imageurl
             config.BTN = ownerdata.button
             config.FOOTER = ownerdata.footer
