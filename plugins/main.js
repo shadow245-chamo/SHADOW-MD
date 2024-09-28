@@ -17,7 +17,7 @@ const {
 } = require('../lib/functions')
 cmd({
         pattern: "alive",
-        react: "🍬",
+        react: "💭",
         alias: ["online", "test", "bot"],
         desc: "Check bot online or no.",
         category: "other",
@@ -38,7 +38,7 @@ cmd({
             let monspace = '```'
             const sssf = `${monspace}👋 Hello ${pushname} I'm alive now${monspace}
 
-*👨‍💻 Im SHADOW-MD whatsapp bot*
+*👨‍💻 Im SHADOW-MD whatsapp bot 👨‍💻*
     
 > *Version:* ${require("../package.json").version}
 > *Memory:* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
@@ -109,7 +109,7 @@ cmd({
 
 cmd({
     pattern: "menu",
-    react: "📖",
+    react: "🗃️",
     alias: ["panel", "list", "commands", "cmd"],
     desc: "Get bot\'s command list.",
     category: "main",
@@ -164,8 +164,8 @@ ${monspace}👋😸 Hello ${pushname}${monspace}
                 name: "cta_url",
                     buttonParamsJson: JSON.stringify({
                         display_text: '',
-                        url: 'https://whatsapp.com/channel/0029Val6g7EBadmagKxuYi1R',
-                        merchant_url: 'https://whatsapp.com/channel/0029Val6g7EBadmagKxuYi1R'
+                        url: 'https://whatsapp.com/channel/0029Vajn0gb8F2pFh7PDqO0c',
+                        merchant_url: 'https://whatsapp.com/channel/0029Vajn0gb8F2pFh7PDqO0c'
                 }),
             },
             {
@@ -230,7 +230,7 @@ externalAdReply: {
 title: 'ꜱʜᴀᴅᴏᴡ ᴍᴅ ᴡᴀᴛꜱ ᴀᴘᴘ ʙᴏᴛ ⚟',
 body: 'ᴀ ꜱɪᴍᴘʟᴇ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ',
 mediaType: 1,
-sourceUrl: "https://whatsapp.com/channel/0029Val6g7EBadmagKxuYi1R" ,
+sourceUrl: "https://whatsapp.com/channel/0029Vajn0gb8F2pFh7PDqO0c" ,
 thumbnailUrl: `https://i.imgur.com/2p7gHUD.jpeg` ,
 renderLargerThumbnail: true,
 showAdAttribution: false
