@@ -125,13 +125,15 @@ cmd({
         let monspace = '```'
             const MNG = `ꜱʜᴀᴅᴏᴡ ᴍᴅ ᴡᴀᴛꜱ ᴀᴘᴘ ʙᴏᴛ ⚟
 	    
-${monspace}👋 Hello ${pushname}${monspace}
+${monspace}👋😸 Hello ${pushname}${monspace}
 
 
  *🚀𝙑𝙀𝙍𝙎𝙄𝙊𝙉:* ${require("../package.json").version}
  *⌛𝙈𝙀𝙈𝙊𝙍𝙔:* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
  *📍𝙋𝙇𝘼𝙏𝙁𝙊𝙍𝙈:* ${hostname}
  *🕒𝙍𝙐𝙉𝙏𝙄𝙈𝙀:* ${runtime(process.uptime())}
+
+*💭 ➤New version shadow md is very smart and developed with technical technology and java script, the owner takes care to update it from year to year to help the users to get various benefits We apologize if there are any problems with Shado md is, owner Lakshan damayantha 🚀💗👨‍🚀*
 `
             const categories = [];
         const categoryMap = new Map();
