@@ -54,7 +54,7 @@ reply('කරුනාකර shadow md bot ඇඩ්මින් ලබා ද�
 cmd({
     pattern: "admins",
     desc: "Get a list of group admins.",
-    react: "👥",
+    react: "👨‍🚀",
     category: "group",
     filename: __filename
 },
@@ -88,7 +88,7 @@ cmd({
     pattern: "groupdesc",
     desc: "Change the group description.",
     use: '.groupdesc <New Description>',
-    react: "👥",
+    react: "✅",
     category: "group",
     filename: __filename
 },
@@ -118,7 +118,7 @@ async (conn, mek, m, {
 cmd({
     pattern: "groupinfo",
     desc: "Get information about the group.",
-    react: "👥",
+    react: "💻",
     category: "group",
     filename: __filename
 },
@@ -149,7 +149,7 @@ async (conn, mek, m, {
 cmd({
     pattern: "grouplink",
     desc: "Get the group's invite link.",
-    react: "👥",
+    react: "💬",
     category: "group",
     filename: __filename
 },
@@ -175,7 +175,7 @@ cmd({
     pattern: "gname",
     desc: "Change the group name",
     use: ".gname <New Group Name>",
-    react: "✏️",
+    react: "✅",
     category: "group",
     filename: __filename
 },
@@ -211,7 +211,7 @@ cmd({
     pattern: "setsubject",
     desc: "Change the group subject.",
     use: '.setsubject <New Subject>',
-    react: "👥",
+    react: "🚀",
     category: "group",
     filename: __filename
 },
@@ -245,7 +245,7 @@ async (conn, mek, m, {
 cmd({
     pattern: "tagall",
     desc: "Mention all group members.",
-    react: "👥",
+    react: "✅",
     category: "group",
     filename: __filename
 },
@@ -259,7 +259,7 @@ async (conn, mek, m, {
         const mentions = groupMetadata.participants.map(p => p.id);
         
         return await conn.sendMessage(from, {
-            text: `Mentioning everyone:\n\n${members}`,
+            text: `Mentioning everyone 👨‍💻💗➤:\n\n${members}`,
             mentions
         }, { quoted: mek });
 
@@ -408,7 +408,7 @@ async (conn, mek, m, { from, isGroup, reply, match }) => {
 cmd({
     pattern: "hidetag",
     desc: "Tags everyperson of group without mentioning their numbers",
-    react: "👥",
+    react: "⚡",
     category: "group",
     filename: __filename,
     use: '<text>',
@@ -437,7 +437,7 @@ l(e)
 cmd({
     pattern: "kick",
     desc: "Kicks replied/quoted user from group.",
-    react: "👥",
+    react: "❌",
     category: "group",
     filename: __filename,
     use: '<quote|reply|number>',
