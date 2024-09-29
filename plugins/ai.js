@@ -28,7 +28,7 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 
-await conn.sendMessage(from,{image :{ url: `https://api.vihangayt.com/ai/stablediff?prompt=${q}&negprompt=not%20hd,%20watermark` },caption: '> *⚖️𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 - : ©𝐌𝐫 𝐂𝐲𝐛𝐞𝐫 𝐌𝐚𝐧𝐮𝐥 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 2024💗*' },{quoted:mek});
+await conn.sendMessage(from,{image :{ url: `https://api.vihangayt.com/ai/stablediff?prompt=${q}&negprompt=not%20hd,%20watermark` },caption: '> *SHADOW MD BY LAKSHAN TEACH TANKS MANUL MD genimg command 👨‍💻💗➤*' },{quoted:mek});
 
 }catch(e){
 console.log(e)
