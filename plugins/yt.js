@@ -53,22 +53,7 @@ let buttons = [
                 header: '',
                 footer: config.FOOTER,
                 body: msg
-
-            }
-            return await conn.sendButtonMessage(from, buttons, m, message)
-       await conn.sendMessage(from, { react: { text: '🎼', key: video.key } })
-                    await conn.sendMessage(from, { react: { text: '✅', key: mek.key } })
-                    return fs.unlinkSync(`./${randomName}`);
-                } else {
-                    const document = await conn.sendMessage(from, { document: fs.readFileSync(`./${randomName}`), mimetype: 'video/mp4', fileName: title + '.mp4' }, { quoted: mek })
-                    await conn.sendMessage(from, { react: { text: '🎼', key: document.key } })
-                    await conn.sendMessage(from, { react: { text: '✅', key: mek.key } })
-                    return fs.unlinkSync(`./${randomName}`);
-                }
-            } else {
-                fs.unlinkSync(`./${randomName}`);
-                return reply('*File size is too big!*') 
-            }     
+             }
         } catch (e) {
             reply('*Error !!*')
             console.log(e)
@@ -128,28 +113,13 @@ let des = `*❮❮ SHADOW VIDEO DOWNLOADER ❯❯*
                 header: '',
                 footer: config.FOOTER,
                 body: msg
-
-            }
+             }
             return await conn.sendButtonMessage(from, buttons, m, message)
-        
-        await conn.sendMessage(from, { react: { text: '🎼', key: video.key } })
-                    await conn.sendMessage(from, { react: { text: '✅', key: mek.key } })
-                    return fs.unlinkSync(`./${randomName}`);
-                } else {
-                    const document = await conn.sendMessage(from, { document: fs.readFileSync(`./${randomName}`), mimetype: 'video/mp4', fileName: title + '.mp4' }, { quoted: mek })
-                    await conn.sendMessage(from, { react: { text: '🎼', key: document.key } })
-                    await conn.sendMessage(from, { react: { text: '✅', key: mek.key } })
-                    return fs.unlinkSync(`./${randomName}`);
-                }
-            } else {
-                fs.unlinkSync(`./${randomName}`);
-                return reply('*File size is too big!*') 
-            }     
         } catch (e) {
-            reply('*Error !!*')
             console.log(e)
+            reply('*Error !!*')
         }
-    })
+    });
 
 //======================yts=================//
 
