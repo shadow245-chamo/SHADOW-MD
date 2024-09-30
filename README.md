@@ -22,12 +22,12 @@
 ## VERSION 7v NEXT UP DATE ⚟
 
 
-## 🚀 1 steps SHADOW MD FORK NOW ➤ 
+## 🚀 1 step SHADOW MD FORK NOW ➤ 
 <a href="https://github.com/Shadowteach/SHADOW-MD/fork"><img src="https://img.shields.io/badge/Fork%20Repo-blue" alt="FORK SHADOW MD REPO" width="150"></a>
 </br>
 <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
 <br>
-## 🚀 2 steps PAIR WEB SHADOW MD WATS APP BOT ➤
+## 🚀 2 step PAIR WEB SHADOW MD WATS APP BOT ➤
 <a href="https://pair-web-public.koyeb.app/"><img src="https://img.shields.io/badge/QR%20OR%20PAIR%20CODE-blue" alt="GET SESSION" width="200"></a>
 
 
