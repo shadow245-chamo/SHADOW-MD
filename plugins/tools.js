@@ -1,7 +1,7 @@
 const config = require('../config');
 const { cmd, commands } = require('../command');
 cmd({
-    pattern: "calc",
+    pattern: "cal",
     desc: "Calculate a mathematical expression.",
     use: ".calc <expression>",
     react: "🛠️",    
@@ -23,7 +23,7 @@ async (conn, mek, m, {
             return reply('Invalid mathematical expression.');
         }
 
-        return await conn.sendMessage(from, { text: `Result: ${result}` }, { quoted: mek });
+        return await conn.sendMessage(from, { text: `calculator: ${result}` }, { quoted: mek });
 
     } catch (e) {
         console.log(e);
