@@ -2,7 +2,8 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=yasiyaofc1&label=Profile%20views&color=0e75b6&style=flat" alt=
 
-<h1 align="center"> #𝗦𝗛𝗔𝗗𝗢𝗪 𝗠𝗗 𝗢𝗪𝗡𝗘𝗥 𝗣𝗥𝗢𝗙𝗜𝗟𝗘 𝗩𝗘𝗪𝗦 🚀⚡</h1>
+<a href="https://ambitious-laina-vajiratech-7527bf26.koyeb.app/"><img src="https://img.shields.io/badge/QR%20OR%20PAIR%20CODE-blue" alt="GET SESSION" width="200"></a>
+
 
 <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
 
