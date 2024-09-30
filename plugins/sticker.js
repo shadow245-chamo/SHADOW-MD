@@ -1,6 +1,5 @@
 const axios = require('axios');
 const { cmd } = require('../command');
-const { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter");
 cmd({
     pattern: "sticker",
     react: "🔮",
