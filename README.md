@@ -1,5 +1,4 @@
 
-                    src="https://komarev.com/ghpvc/?username=yasiyaofc1&label=Profile%20views&color=0e75b6&style=flat" alt=
 
 <a href="https://pair-web-public.koyeb.app/"><img src="https://img.shields.io/badge/QR%20OR%20PAIR%20CODE-blue" alt="GET SESSION" width="200"></a>
 
