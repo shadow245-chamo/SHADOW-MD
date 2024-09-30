@@ -1,5 +1,5 @@
 
-<h1 align="center">SHADOW-MD 6.O</h1>
+<h1 align="center">SHADOW-MD 6.O.0 v</h1>
 
 ## BEST WATS APP 1 YEAR OLD WATSAPP BOT SHADOW MD  
 
@@ -17,7 +17,7 @@
 <div align="center">
 
      
- [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F01&lines=ＳＨＡＤＯＷ+ＭＤ+VERSION+WATSPP+BOT)](https://git.io/typing-svg)
+ [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F01&lines=ＳＨＡＤＯＷ+ＭＤ+V6+WATSPP+BOT)](https://git.io/typing-svg)
 
 ## VERSION 7v NEXT UP DATE ⚟
 
