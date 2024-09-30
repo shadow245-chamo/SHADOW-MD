@@ -107,11 +107,11 @@ async function connectToWA() {
 
 👑WELCOM TO SHADOW MD MULTIDEVICE WHATSAPP BOT👑
 
-*🚀 OWNER:  Lakshan damayantha 👨‍💻 
+*🚀 OWNER:  Lakshan damayantha 👨‍💻*
 
-*🔹 CONTACT : https://wa.me/+94767910958
+*🔹 CONTACT : https://wa.me/+94767910958*
 
-  🚀 PREFIX:*   (  .  )
+  *🚀 PREFIX:   (  .  )*
 
 > THANK FOR YOU USING MY BOT  *👨‍💻SHADOW MD👨‍💻*
 > You can give happiness to others as well as yourself with this bot 💗🚀
@@ -119,7 +119,7 @@ async function connectToWA() {
 
 *⛓JOIN IN MY WHATSAPP GROUP - :* https://whatsapp.com/channel/0029Val6g7EBadmagKxuYi1R
 
-ρσɯҽԃ Ⴆყ 𝙻𝙰𝙺𝚂𝙷𝙰𝙽 𝚃𝙴𝙲𝙻𝙾𝙻𝙾𝙶𝚈 ꪶ🕊🍒*`;
+*ρσɯҽԃ Ⴆყ 𝙻𝙰𝙺𝚂𝙷𝙰𝙽 𝚃𝙴𝙲𝙻𝙾𝙻𝙾𝙶𝚈 ꪶ🕊🍒*`;
 conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.imgur.com/pJ5WluK.jpeg` }, caption: up })
 }
 })
@@ -145,7 +145,7 @@ conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.img
             const senderNumber = sender.split('@')[0]
             const botNumber = conn.user.id.split(':')[0]
             const pushname = mek.pushName || 'Sin Nombre'
-            const developers = '94704031866'
+            const developers = '94767910958'
             const isbot = botNumber.includes(senderNumber)
             const isdev = developers.includes(senderNumber)
             const isMe = isbot ? isbot : isdev
@@ -330,10 +330,7 @@ if(!isOwner && config.MODE === "private") return
 if(!isOwner && isGroup && config.MODE === "inbox") return
 if(!isOwner && !isGroup && config.MODE === "groups") return
 //==========================================================================//       
-if(senderNumber.includes("94767910958")){
-if(isReact) return
-m.react("👨‍💻")
-}                
+
          
             //==================================plugin map================================
             const events = require('./command')
