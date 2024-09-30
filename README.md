@@ -1,7 +1,7 @@
 
 <h1 align="center">SHADOW-MD 6.O</h1>
 
-## BEST WATS APP 1 YEAR OLD whatsapp BOT SHADOW MD  
+## BEST WATS APP 1 YEAR OLD WATSAPP BOT SHADOW MD  
 
 <div align="center
 
