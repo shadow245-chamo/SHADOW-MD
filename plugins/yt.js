@@ -17,8 +17,8 @@ const {
     cmd,
     commands
 } = require('../command')
-const yts = require("api-dylux")
-const ytdl = require("yt-search")
+const yts = require("yt-search")
+const ytdl = require("api-dylux")
 
 
 async function youtube720(url) {
