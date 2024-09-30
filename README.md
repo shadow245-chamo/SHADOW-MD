@@ -19,9 +19,9 @@
      
  [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F01&lines=ＳＨＡＤＯＷ+ＭＤ+BOT+WATSAPP)](https://git.io/typing-svg)
 
-#𝗩𝗘𝗥𝗦𝗜𝗢𝗡 6.0.0 𝗨𝗣 𝗗𝗔𝗧𝗘 
+## VERSION 7V COMING ZONE➤
 
-➤𝗣𝗜𝗥 𝗖𝗢𝗗 𝗦𝗛𝗔𝗗𝗢𝗪-𝗠𝗗❮❮❮
+## PAIR WEB SHADOW MD WATS APP BOT ➤
 <a href="https://pair-web-public.koyeb.app/"><img src="https://img.shields.io/badge/QR%20OR%20PAIR%20CODE-blue" alt="GET SESSION" width="200"></a>
 
 
