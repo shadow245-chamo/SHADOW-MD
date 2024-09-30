@@ -1,13 +1,5 @@
 
 
-<h1 align="center">Hi 👋, I'm SHADOW MD</h1>
-<h3 align="center">A Passionate Developer From Sri Lanka</h3>
-<img align="right" alt="Coding" width="400" src="https://media.tenor.com/rePDfDWO3XoAAAAd/hacking.gif">
-
-## 🎀 -  Deployment Methods
-
-*ＡＬＬ ＦＬＡＴ ＦＯＲＭ* 🚀
-
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=yasiyaofc1&label=Profile%20views&color=0e75b6&style=flat" alt=
 
 <h1 align="center"> #𝗦𝗛𝗔𝗗𝗢𝗪 𝗠𝗗 𝗢𝗪𝗡𝗘𝗥 𝗣𝗥𝗢𝗙𝗜𝗟𝗘 𝗩𝗘𝗪𝗦 🚀⚡</h1>
