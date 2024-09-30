@@ -30,13 +30,31 @@
 ## 🚀 2 step PAIR WEB SHADOW MD WATS APP BOT ➤
 <a href="https://pair-web-public.koyeb.app/"><img src="https://img.shields.io/badge/QR%20OR%20PAIR%20CODE-blue" alt="GET SESSION" width="200"></a>
 
+## CRETED BY Lakshan damayantha 👨‍💻
 
+
+## HOW TO DEPLOY SHADOW MD BOT ➤
+
+
+1) 𝙵𝙸𝚁𝚂𝚃 𝙵𝙾𝚁𝙺 𝚃𝙷𝙴 𝚁𝙴𝙿𝙾.
+
+
+2) 𝙿𝙰𝙸𝚁 𝚌𝚘𝚍 𝚃𝙷𝙴𝙽 𝚆𝙸𝙻𝙻 𝙲𝙾𝙼𝙴 𝚂𝙴𝚂𝚂𝙸𝙾𝙽 𝙸𝙳.
+
+
+4) 𝙰𝙽𝙳 𝚂𝙴𝙻𝙴𝙲𝚃 𝙵𝙾𝚁𝙺 𝚁𝙴𝙿𝚘 𝙰𝙽𝙳 𝙳𝙴𝙿𝙻𝙾𝚈 𝚃𝙷𝙴 𝙱𝙾𝚃.
+
+
+5) 𝙳𝙴𝙿𝙻𝙾𝚈 𝙰𝙻𝙻 𝙵𝙻𝙰𝚃𝙵𝙾𝚁𝙼 𝙽𝙾 𝙴𝚁𝚁𝙾𝚁𝚂
+
+
+6) 𝙽𝙾𝚆 𝙴𝙽𝙹𝙾𝚈 𝚃𝙷𝙴 𝚂𝙷𝙰𝙳𝙾𝚆 𝙼𝙳 𝙱𝙾𝚃.
+
+
+# THANKS GUYS ➤
   
 
-<hr>
-## Workflow Deploy Code 🚀💗🔊
-
-
+## WORKFLOUR DEPLOY COD 🚀➤
 ```
 name: Node.js CI
 
@@ -72,23 +90,3 @@ jobs:
     - name: Start application
       run: npm start
 ```
-
-CREDIT BY Lakshan damayantha 👨‍💻
-
-
-## HOW TO DEPLOY 𝚂𝙷𝙰𝙳𝙾𝚆 - ＭＤ 👨‍💻
-
-
-1) 𝙵𝙸𝚁𝚂𝚃 𝙵𝙾𝚁𝙺 𝚃𝙷𝙴 𝚁𝙴𝙿𝙾.
-
-2) 𝚂𝙲𝙰𝙽 𝚃𝙷𝙴 𝚀𝚁 𝚃𝙷𝙴𝙽 𝚆𝙸𝙻𝙻 𝙲𝙾𝙼𝙴 𝚂𝙴𝚂𝚂𝙸𝙾𝙽 𝙸𝙳.
-
-4) 𝙰𝙽𝙳 𝚂𝙴𝙻𝙴𝙲𝚃 𝙵𝙾𝚁𝙺 𝚁𝙴𝙿𝚘 𝙰𝙽𝙳 𝙳𝙴𝙿𝙻𝙾𝚈 𝚃𝙷𝙴 𝙱𝙾𝚃.
-
-
-6) 𝙽𝙾𝚆 𝙴𝙽𝙹𝙾𝚈 𝚃𝙷𝙴 𝚂𝙷𝙰𝙳𝙾𝚆 𝙼𝙳 𝙱𝙾𝚃.
-
-
-# THANKS TO 💗⚡
-DEPLOY ALL MEMBARS 🤭❯❯❯❯❯
-
