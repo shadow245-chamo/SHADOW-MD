@@ -73,14 +73,11 @@ cmd({
 
             }
             return await conn.sendButtonMessage(from, buttons, m, opts)
-   
 	await conn.sendMessage(from, {
             audio: { url: 'https://github.com/Shadowmd99/V-6-menu/raw/main/Alivevvv6.mp3' },
             mimetype: 'audio/mp4',
             ptt: true
         }, { quoted: mek });
-		
-	
 	} catch (e) {
             reply('*Error !!*')
             console.log(e)
@@ -197,6 +194,11 @@ ${monspace}👋😸 Hello ${pushname}${monspace}
         }
 
         return await conn.sendButtonMessage(from, buttons, m, opts)
+    await conn.sendMessage(from, {
+            audio: { url: 'https://github.com/Shadowmd99/V-6-menu/raw/main/%E0%B6%B8%E0%B7%99%E0%B6%B1%E0%B7%94%206.mp3' },
+            mimetype: 'audio/mp4',
+            ptt: true
+        }, { quoted: mek });
     } catch (e) {
         reply('*Error !!*')
         console.log(e)
