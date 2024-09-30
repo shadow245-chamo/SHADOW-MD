@@ -102,4 +102,8 @@ jobs:
 ```
 ## 💭 FOLLOW MY CHANAL
 
-<a href="https://whatsapp.com/channel/0029VahMZasD8SE5GRwzqn3Z"><img src="https://img.shields.io/badge/Join%20Our%20WhatsApp%20Channel-blue" alt="📎 Join Our WhatsApp Channel" width="350"></a>
+<a href="https://whatsapp.com/channel/0029Vajn0gb8F2pFh7PDqO0c"><img src="https://img.shields.io/badge/Join%20Our%20WhatsApp%20Channel-blue" alt="📎 Join Our WhatsApp Channel" width="350"></a>
+
+<img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
+
+<div align="center">
