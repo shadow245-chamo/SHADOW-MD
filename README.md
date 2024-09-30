@@ -40,7 +40,7 @@
 <p/>
  
 
-### <br>
+### <REPLIT>
 <p align="left">
 <a href="https://repl.it/github.com/Shadowteach/SHADOW-MD.git"><img height= "30" title="Author" src="https://img.shields.io/badge/𝗥𝗘𝗣𝗟𝗜𝗧-orange?style=for-the-badge&logo=replit"></a>
 <p/>
