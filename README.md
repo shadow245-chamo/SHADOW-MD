@@ -20,8 +20,10 @@
  [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F01&lines=ＳＨＡＤＯＷ+ＭＤ+BOT+WATSAPP)](https://git.io/typing-svg)
 
 ## VERSION 7v NEXT UP DATE ⚟
-## 
-<a href="https://github.com/VajiraTech/VAJIRA-MD-NEW/fork"><img src="https://img.shields.io/badge/Fork%20Repo-blue" alt="FORK SHADOW MD REPO" width="150"></a>
+
+
+## 🚀 1 steps SHADOW MD FORK NOW 
+<a href="https://github.com/Shadowteach/SHADOW-MD/fork"><img src="https://img.shields.io/badge/Fork%20Repo-blue" alt="FORK SHADOW MD REPO" width="150"></a>
 </br>
 <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
 <br>
