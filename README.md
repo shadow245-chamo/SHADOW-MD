@@ -1,8 +1,4 @@
 
-
-<a href="https://pair-web-public.koyeb.app/"><img src="https://img.shields.io/badge/QR%20OR%20PAIR%20CODE-blue" alt="GET SESSION" width="200"></a>
-
-
 <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
 
 <div align="center">
@@ -13,8 +9,7 @@
 #𝗩𝗘𝗥𝗦𝗜𝗢𝗡 6.0.0 𝗨𝗣 𝗗𝗔𝗧𝗘 
 
 ➤𝗣𝗜𝗥 𝗖𝗢𝗗 𝗦𝗛𝗔𝗗𝗢𝗪-𝗠𝗗❮❮❮
-
-<a href="https://pair-web-public.koyeb.app/"><img src="https://i.ibb.co/5BGSVZw/pair-code-btn-zusyco.png" alt="PAIR-CODE" border="2" width="170" height="41" ></a>
+<a href="https://pair-web-public.koyeb.app/"><img src="https://img.shields.io/badge/QR%20OR%20PAIR%20CODE-blue" alt="GET SESSION" width="200"></a>
 
 
   <p align="center">
