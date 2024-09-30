@@ -30,6 +30,14 @@
 ## 🚀 2 step PAIR WEB SHADOW MD WATS APP BOT ➤
 <a href="https://pair-web-public.koyeb.app/"><img src="https://img.shields.io/badge/QR%20OR%20PAIR%20CODE-blue" alt="GET SESSION" width="200"></a>
 
+
+
+| <a href="https://github.com/Shadowteach"><img src="https://i.imgur.com/i8ptlXY.jpeg" width=90 height=90></a> | <a href="https://github.com/Shadowteach">
+
+< **[LAKSHAN DAMAYANTHA](https://github.com/Shadowteach)**</br>SHADOW MD OWNER 👨‍💻➤
+
+
+
 ## CRETED BY Lakshan damayantha 👨‍💻
 
 
