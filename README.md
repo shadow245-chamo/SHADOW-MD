@@ -1,4 +1,8 @@
-
+<p align="center">
+<a href="https://github.com/vipshadowmd">
+    <img src="https://i.imgur.com/2p7gHUD.jpeg"  width="700px">
+</a>
+<hr>
 <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
 
 <div align="center">
@@ -12,11 +16,7 @@
 <a href="https://pair-web-public.koyeb.app/"><img src="https://img.shields.io/badge/QR%20OR%20PAIR%20CODE-blue" alt="GET SESSION" width="200"></a>
 
 
-  <p align="center">
-<a href="https://github.com/vipshadowmd">
-    <img src="https://i.imgur.com/2p7gHUD.jpeg"  width="700px">
-</a>
-<hr>
+  
 
 <hr>
 ## Workflow Deploy Code 🚀💗🔊
