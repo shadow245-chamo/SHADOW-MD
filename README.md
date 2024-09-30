@@ -14,7 +14,7 @@
 <div align="center">
 
      
- [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F01&lines=ＳＨＡＤＯＷ+ＭＤ+)](https://git.io/typing-svg)
+ [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F01&lines=ＳＨＡＤＯＷ+ＭＤ+BOT+WATSAPP)](https://git.io/typing-svg)
 
 #𝗩𝗘𝗥𝗦𝗜𝗢𝗡 6.0.0 𝗨𝗣 𝗗𝗔𝗧𝗘 
 
