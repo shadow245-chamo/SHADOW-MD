@@ -34,6 +34,35 @@
 
 <div align="center">
 
+### <br>
+<p align="left">
+<a href="https://heroku.com/deploy?template=https://github.com/PRINCE-GDS/PRINXE-MD"><img height= "30" title="Author" src="https://img.shields.io/badge/𝗛𝗘𝗥𝗢𝗞𝗨-9966CC?style=for-the-badge&logo=render"></a>
+<p/>
+ 
+
+### <br>
+<p align="left">
+<a href="https://repl.it/github/PRINCE-GDS/PRINXE-MD"><img height= "30" title="Author" src="https://img.shields.io/badge/𝗥𝗘𝗣𝗟𝗜𝗧-orange?style=for-the-badge&logo=replit"></a>
+<p/>
+
+### <br>
+<p align="left">
+<a href="https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2FPRINCE-GDS%2FPRINXE-MD"><img height= "30" title="Author" src="https://img.shields.io/badge/𝗥𝗘𝗡𝗗𝗘𝗥-E6E6FA?style=for-the-badge&logo=render"></a>
+<p/>
+
+### <br>
+  <p align="left"><a href="https://app.koyeb.com/apps/deploy?type=git&repository=github.com%2FPRINCE-GDS%2FPRINXE-MD&branch=main&nameprincegds&builder=dockerfile&env[DATABASE_URL]=&env[SESSION_ID]=your+sessionid+here&env[MODE]=public&env=[autoRead]=false&env[statusview]=false&env[REMOVEBG_KEY]=your+rmbg+key&env[antidelete]=false"> <img src="https://www.koyeb.com/static/images/deploy/button.svg" height="30"/></a></p>
+
+### <br>
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app)
+
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+
+
+
+
+
 | <a href="https://github.com/Shadowteach"><img src="https://i.imgur.com/i8ptlXY.jpeg" width=90 height=90></a> | <a href="https://github.com/Shadowteach">
 
 < **[LAKSHAN DAMAYANTHA](https://github.com/Shadowteach)**</br>SHADOW MD OWNER 👨‍💻➤
