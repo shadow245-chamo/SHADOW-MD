@@ -61,7 +61,7 @@
 6) 𝙽𝙾𝚆 𝙴𝙽𝙹𝙾𝚈 𝚃𝙷𝙴 𝚂𝙷𝙰𝙳𝙾𝚆 𝙼𝙳 𝙱𝙾𝚃.
 
 
-# THANKS GUYS ➤
+# HELLOW GUYS ➤
   
 
 ## WORKFLOUR DEPLOY COD 🚀➤
