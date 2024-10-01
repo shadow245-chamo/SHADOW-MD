@@ -34,12 +34,6 @@ let desc = `*❮❮❮ SHADOW SONG DOWNLOADER ❯❯❯*
 
 > *ꜱʜᴀᴅᴏᴡ ᴍᴅ ᴡᴀᴛꜱ ᴀᴘᴘ ʙᴏᴛ ⚟*
 `
-await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
-
-//download audio
-
-let down = await fg.yta(url)  
-let downloadUrl = down.dl_url
     let buttons = [
             {
                 name: "quick_reply",
@@ -69,6 +63,44 @@ let downloadUrl = down.dl_url
             reply('*Error !!*')
         }
     });
+cmd({
+    pattern: "audsong",
+    react: "🎧",
+    dontAddCommandList: true,
+    filename: __filename
+},
+
+    async (conn, mek, m, { from, q, reply }) => {
+        try {
+            if (!q) return await reply('*Need a youtube url!*')
+            let info = await ytdl.getInfo(q);
+            let title = info.videoDetails.title;
+            let randomName = getRandom(".mp3");
+            const stream = apidylux(q, {
+                filter: (info) => info.audioBitrate == 160 || info.audioBitrate == 128,
+            })
+                .pipe(fs.createWriteStream(`./${randomName}`));
+            await new Promise((resolve, reject) => {
+                stream.on("error", reject);
+                stream.on("finish", resolve);
+            });
+
+            let stats = fs.statSync(`./${randomName}`);
+            let fileSize = stats.size / (1024 * 1024);
+            if (fileSize <= 1024) {
+                let audio = await conn.sendMessage(from, { audio: fs.readFileSync(`./${randomName}`), mimetype: 'audio/mpeg', fileName: `${title}.mp3` }, { quoted: mek })
+                await conn.sendMessage(from, { react: { text: '🎼', key: audio.key } })
+                await conn.sendMessage(from, { react: { text: '✅', key: mek.key } })
+                return fs.unlinkSync(`./${randomName}`);
+            } else {
+                reply('*File size is too big!*')
+            }
+            fs.unlinkSync(`./${randomName}`);
+        } catch (e) {
+            reply('*Error !!*')
+            console.log(e)
+        }
+    })
 
 //===========video-dl===========
 
