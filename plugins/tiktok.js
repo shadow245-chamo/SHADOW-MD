@@ -19,7 +19,7 @@ cmd({
 },
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        if (!q || !q.startsWith("https://")) return reply("Please provide a valid Tiktok video URL!");
+        if (!q || !q.startsWith("https://")) return reply("Please provide a valid Tiktok video URL❗");
         const data = await fetchJson(`${baseUrl}/api/tiktokdl?url=${q}`);
         let desc = ` *❮❮❮ 𝗦𝗛𝗔𝗗𝗢𝗪 𝗠𝗗 𝗧𝗜𝗞 𝗧𝗢𝗞 𝗗𝗢𝗪𝗡𝗟𝗢𝗗𝗘𝗥 ❯❯❯*
 
@@ -31,7 +31,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
 *ꜱʜᴀᴅᴏᴡ ᴍᴅ ᴏᴡɴᴇʀ ʙʏ ʟᴀᴋꜱʜᴀɴ ᴛᴇᴀᴄʜ ➤*`;
 
-        const vv = await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/9b44e3266c065df601430.jpg"}, caption: desc }, { quoted: mek });
+        const vv = await conn.sendMessage(from, { image: { url: "https://i.imgur.com/9qZi4am.jpeg"}, caption: desc }, { quoted: mek });
 
         conn.ev.on('messages.upsert', async (msgUpdate) => {
             const msg = msgUpdate.messages[0];
