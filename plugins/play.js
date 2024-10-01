@@ -20,7 +20,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         const data = search.videos[0];
         const url = data.url;
 
-        let desc = `*❮❮❮ 𝗦𝗢𝗡𝗚 𝗩𝗜𝗗𝗘𝗢 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 ❯❯❯*
+        let desc = `*❮❮❮ 𝗦𝗢𝗡𝗚║𝗩𝗜𝗗𝗘𝗢║𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 ❯❯❯*
         
 > *\`➤ Title\` :* ${data.title}
 
@@ -32,7 +32,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
 > *\`➤ AGO\`:* ${data.ago}
 
-*Reply This Message With Nambars*
+*❮❮ Reply This Message With Nambars ❯❯*
 
 *➢ 1.1 Audio*
 *➢ 1.2 Audio With Document*
