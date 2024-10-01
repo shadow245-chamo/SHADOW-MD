@@ -32,8 +32,8 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
 > *\`➤ AGO\`:* ${data.ago}
 
-*❮❮ Reply This Message With Nambars ❯❯*
-
+*◄❪ Reply This Message With Nambars ❫►*
+╭────────────────────◉◉➤
 *➢ 1.1 Audio*
 *➢ 1.2 Audio With Document*
 *➢ 2.1 Video*
