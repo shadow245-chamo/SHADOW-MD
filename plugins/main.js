@@ -72,12 +72,15 @@ cmd({
                 body: sssf
 
             }
-            return await conn.sendButtonMessage(from, buttons, m, opts)
+         
 	await conn.sendMessage(from, {
             audio: { url: 'https://github.com/Shadowmd99/V-6-menu/raw/main/Alivevvv6.mp3' },
             mimetype: 'audio/mp4',
             ptt: true
         }, { quoted: mek });
+	
+	return await conn.sendButtonMessage(from, buttons, m, opts)	
+	
 	} catch (e) {
             reply('*Error !!*')
             console.log(e)
