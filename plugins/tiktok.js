@@ -14,7 +14,7 @@ cmd({
     alias: ["tt"],
     desc: "Download tt videos",
     category: "download",
-    react: "🔎",
+    react: "📁",
     filename: __filename
 },
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
@@ -25,10 +25,10 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
 *◄❪ Reply This Message With Nambars ❫►*
 ╭────────────────────────────────◉◉➤
-*➢ 1 Download Video With Watermark➤*
-*➢ 2 Download Video Without Watermark➤*
-*➢ 3 Download Audio➤*
-
+*➢ 1 Download Video With Watermark ➤*
+*➢ 2 Download Video Without Watermark ➤*
+*➢ 3 Download Audio ➤*
+╰────────────────────────────────◉◉➤
 *ꜱʜᴀᴅᴏᴡ ᴍᴅ ᴏᴡɴᴇʀ ʙʏ ʟᴀᴋꜱʜᴀɴ ᴛᴇᴀᴄʜ ➤*`;
 
         const vv = await conn.sendMessage(from, { image: { url: "https://i.imgur.com/9qZi4am.jpeg"}, caption: desc }, { quoted: mek });
