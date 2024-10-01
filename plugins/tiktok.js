@@ -25,9 +25,9 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
 *◄❪ Reply This Message With Nambars ❫►*
 
-*➢ 1 Download TikTok Video With Watermark ⚟*
-*➢ 2 Download TikTok Video Without Watermark ⚟*
-*➢ 3 Download Audio ⚟*
+*➢ 1 Download Video With Watermark➤*
+*➢ 2 Download Video Without Watermark➤*
+*➢ 3 Download Audio➤*
 
 *ꜱʜᴀᴅᴏᴡ ᴍᴅ ᴏᴡɴᴇʀ ʙʏ ʟᴀᴋꜱʜᴀɴ ᴛᴇᴀᴄʜ ➤*`;
 
