@@ -40,14 +40,35 @@ await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:m
 
 let down = await fg.yta(url)  
 let downloadUrl = down.dl_url
+    let buttons = [
+            {
+                name: "quick_reply",
+                buttonParamsJson: JSON.stringify({
+                    display_text: "Audio",
+                    id: ".audsong " + result.url
+                }),
+            },
+            {
+                name: "quick_reply",
+                buttonParamsJson: JSON.stringify({
+                    display_text: "Document",
+                    id: ".docsong " + result.url
+                }),
+            }
+            ]
+            let message = {
+                image: result.thumbnail,
+                header: '',
+                footer: config.FOOTER,
+                body: msg
 
-//send audio
-await conn.sendMessage(from,{audio:{url: downloadUrl},mimetype:"audio/mpeg"},{quoted:mek})
-await conn.sendMessage(from,{document:{url: downloadUrl},mimetype:"audio/mpeg",fileName:data.title + "mp3",caption:"> *ᴘᴏᴡᴇʀᴅ ʙʏ ꜱʜᴀᴅᴏᴡ ᴍᴅ ➤*"},{quoted:mek})
-}catch(e){
-reply(`${e}`)
-}
-})
+            }
+            return await conn.sendButtonMessage(from, buttons, m, message)
+        } catch (e) {
+            console.log(e)
+            reply('*Error !!*')
+        }
+    });
 
 //===========video-dl===========
 
