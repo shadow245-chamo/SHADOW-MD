@@ -8,7 +8,7 @@ cmd({
     alias: ["yt","play","video"],
     desc: 'Download Song / Video',
     use: '.play Title',
-    react: "📁",
+    react: "📀",
     category: 'download',
     filename: __filename
 },
