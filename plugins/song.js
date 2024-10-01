@@ -26,53 +26,33 @@ let desc= `
 | ❤️‍🩹views : ${deta.views}
 |__________________________`
 
-let msgs = generateWAMessageFromContent(m.chat, {
-  viewOnceMessage: {
-    message: {
-        "messageContextInfo": {
-          "deviceListMetadata": {},
-          "deviceListMetadataVersion": 2
-        },
-        interactiveMessage: proto.Message.InteractiveMessage.create({
-          body: proto.Message.InteractiveMessage.Body.create({
-            text: desc
-          }),
-          footer: proto.Message.InteractiveMessage.Footer.create({
-            text: botname
-          }),
-          header: proto.Message.InteractiveMessage.Header.create({
-          hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image: { url:deta.thumbnail}}, { upload: conn.waUploadToServer })
-          }),
-          nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
-            buttons: [
-              {
-                "name": "quick_reply",
-                "buttonParamsJson": `{"display_text":"Audio 🎵","id":".ytadl ${deta.url}"}`
-              },
-              {
-                "name": "quick_reply",
-                "buttonParamsJson": `{"display_text":"Document 🗂️","id":".ytaddl ${deta.url}"}`
-              }
-           ],
-          }),
-          contextInfo: {
-                  mentionedJid: [m.sender], 
-                  forwardingScore: 999,
-                  isForwarded: true,
-                forwardedNewsletterMessageInfo: {
-                  newsletterJid: njid,
-                  newsletterName: ownername,
-                  serverMessageId: 143
-                }
-                }
-       })
-    }
-  }
-}, { quoted: mek })
-return await conn.relayMessage(m.chat, msgs.message, {})
-}catch(e){
-console.log(e)
-reply(`${e}`)
-}
-})
+
+            let buttons = [
+            {
+                name: "quick_reply",
+                buttonParamsJson: JSON.stringify({
+                    display_text: "Audio",
+                    id: ".audsong " + result.url
+                }),
+            },
+            {
+                name: "quick_reply",
+                buttonParamsJson: JSON.stringify({
+                    display_text: "Document",
+                    id: ".docsong " + result.url
+                }),
+            }
+            ]
+            let message = {
+                image: result.thumbnail,
+                header: '',
+                footer: config.FOOTER,
+                body: msg
+
+            }
+            return await conn.sendButtonMessage(from, buttons, m, message)
+        } catch (e) {
+            console.log(e)
+            reply('*Error !!*')
+        }
+    });
