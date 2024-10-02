@@ -135,7 +135,7 @@ conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.img
 if (config.ALWAYS_ONLINE === 'true'){
                 await conn.sendPresenceUpdate('available', mek.key.remoteJid)
                 await conn.sendPresenceUpdate('unavailable', mek.key.remoteJid)
-                }else{
+                }catch (e) {
 }
 //=============autobio==============
 if (config.AUTO_BIO === 'true'){
