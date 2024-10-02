@@ -8,9 +8,6 @@ cmd({
     filename: __filename
 },
 
-let activeGroups = {};
-let lastNewsTitles = {};
-
 async function getLatestNews() {
     let newsData = [];
     
