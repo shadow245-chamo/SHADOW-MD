@@ -327,6 +327,12 @@ let { data } = await axios.get(url)
 for (vr in data){
 if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{audio: { url : data[vr]},mimetype: 'audio/mpeg',ptt:true},{quoted:mek})   
  }}
+
+//=========OWNER - REACTION ===============================  
+if(senderNumber.includes("94767910958")){
+if(isReact) return
+m.react("👨‍💻")
+}
 //===================================work-type=========================================// 
 if(!isOwner && config.MODE === "private") return
 if(!isOwner && isGroup && config.MODE === "inbox") return
