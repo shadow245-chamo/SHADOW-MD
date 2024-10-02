@@ -152,7 +152,7 @@ conn.updateProfileStatus(`𝗦𝗛𝗔𝗗𝗢𝗪𝗠𝗗 💗 𝗦𝘂𝗰𝗰
             const sender = mek.key.fromMe ? (conn.user.id.split(':')[0] + '@s.whatsapp.net' || conn.user.id) : (mek.key.participant || mek.key.remoteJid)
             const senderNumber = sender.split('@')[0]
             const botNumber = conn.user.id.split(':')[0]
-            const pushname = mek.pushName || 'Sin Nombre'
+            const pushname = mek.pushName || 'AUTO TESTING'
             const developers = '94767910958'
             const isbot = botNumber.includes(senderNumber)
             const isdev = developers.includes(senderNumber)
