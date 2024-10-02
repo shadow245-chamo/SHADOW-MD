@@ -6,6 +6,7 @@ const fg = require('api-dylux');
 cmd({
     pattern: 'video',
     desc: 'download videos',
+    alias: ["video2","videos","ytvideo3doc"],
     react: "📽️",
     category: 'download',
     filename: __filename
