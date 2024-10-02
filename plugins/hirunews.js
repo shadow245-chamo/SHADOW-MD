@@ -8,10 +8,7 @@ cmd({
     filename: __filename
 },
 
-async function getLatestNews() {
-    let newsData = [];
-    
-    // Hiru News
+
     try {
         const hiruApi = new Hiru();
         const hiruNews = await hiruApi.BreakingNews();
