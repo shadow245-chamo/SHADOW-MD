@@ -7,7 +7,15 @@ cmd({
     react: "📁",
     filename: __filename
 },
+let message = `
+➣ 📰 *${article.title}*
 
+➣ ⚠️ _${article.description}_
+
+➣ 🔗 _${article.url}_
+
+  > ❯❯ ꜱʜᴀᴅᴏᴡ-ᴍᴅ ᴡᴀᴛꜱ ᴀᴘᴘ ʙᴏᴛ ➣
+            `;
 async function getLatestNews() {
     let newsData = [];
     
