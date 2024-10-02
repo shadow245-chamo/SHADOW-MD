@@ -1,6 +1,13 @@
 const { cmd } = require('../command');
 const Hiru = require('hirunews-scrap');
 const Esana = require('@sl-code-lords/esana-news');
+cmd({
+    pattern: "hirunews",
+    desc: "Get the latest news headlines.",
+    category: "news",
+    react: "📁",
+    filename: __filename
+},
 
 let activeGroups = {};
 let lastNewsTitles = {};
