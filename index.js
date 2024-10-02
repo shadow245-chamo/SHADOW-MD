@@ -319,9 +319,6 @@ conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.img
                     messageId: message.key.id
                 })
             }
-//=====Auto-Read-Cmd==========//
-if (isCmd && config.AUTO_READ_CMD === "true") {
-              await conn.readMessages([mek.key])  // Mark command as read //
 
 //====================autovoive=====================================✓
 
