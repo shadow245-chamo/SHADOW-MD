@@ -9,7 +9,7 @@ SESSION_ID: process.env.SESSION_ID || "put sesson id",
 SUDO_NB: process.env.SUDO_NB || "94767910958",
 AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
 AUTO_BIO: process.env.AUTO_BIO || "true",
-AUTO_READ_CMD: process.env.AUTO_READ_CMD || "true",
+AUTO_READ_CMD: process.env.AUTO_READ_CMD || "fase",
 MODE: process.env.MODE || "public",
 AUTO_VOICE:"true",
 };
