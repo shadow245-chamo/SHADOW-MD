@@ -131,13 +131,7 @@ conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.img
             mek.message = (getContentType(mek.message) === 'ephemeralMessage') ? mek.message.ephemeralMessage.message : mek.message
             if (mek.key && mek.key.remoteJid === 'status@broadcast' && config.AUTO_READ_STATUS === "true"){
             await conn.readMessages([mek.key])
-        
-if (config.ALWAYS_ONLINE === 'true'){
-                await conn.sendPresenceUpdate('available', mek.key.remoteJid)
-                }catch(e){
-                await conn.sendPresenceUpdate('unavailable', mek.key.remoteJid)
-                
-}
+            }
 //=============autobio==============
 if (config.AUTO_BIO === 'true'){
                await
