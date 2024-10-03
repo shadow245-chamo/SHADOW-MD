@@ -197,7 +197,7 @@ ${monspace}👋😸 Hello ${pushname}${monspace}
         }
 
 	    await conn.sendMessage(from, {
-            audio: { url: 'https://github.com/Shadowmd99/V-6-menu/raw/main/%E0%B6%B8%E0%B7%99%E0%B6%B1%E0%B7%94%206.mp3' },
+            audio: { url: 'https://github.com/Shadowteach/shadow-raw/raw/refs/heads/main/NEW%20BUTTONS%20MENU%20.mp3' },
             mimetype: 'audio/mp4',
             ptt: true
         }, { quoted: mek });
