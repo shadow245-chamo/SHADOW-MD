@@ -1,4 +1,5 @@
-
+const { cmd } = require('../command');
+const yts = require('yt-search');
 cmd({
     pattern: "yts1",
     alias: ["yta1","ytv1","yt1"],
@@ -8,14 +9,14 @@ cmd({
 },
 async (conn, mek, m, { from, q, reply }) => {
     try {
-        if (!q) return reply("Please type a Name or Url... 🤖");
+        if (!q) return reply("Please type a Name or Url...❌");
 
         const search = await yts(q);
         const videos = search.videos.slice(0, 100); // Get only the first 100 videos
 
         if (videos.length === 0) return reply("No videos found for your query.");
 
-        let message = `*𝗠𝗔𝗡𝗨 𝗠𝗗 𝗬𝗼𝘂𝘁𝘂𝗯𝗲 𝗦𝗲𝗮𝗿𝗰𝗵 𝗥𝗲𝘀𝘂𝗹𝘁 🎥*\n\n`;
+        let message = `*𝗦𝗛𝗔𝗗𝗢𝗪 𝗠𝗗 𝗬𝗼𝘂𝘁𝘂𝗯𝗲 𝗦𝗲𝗮𝗿𝗰𝗵 𝗥𝗲𝘀𝘂𝗹𝘁 🎥*\n\n`;
 
         videos.forEach((data, index) => {
             message += `*No - ${index + 1} ⤵*\n`;
@@ -31,7 +32,7 @@ async (conn, mek, m, { from, q, reply }) => {
         message += `*𝗛𝗼𝘄 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗩𝗶𝗱𝗲𝗼 𝗢𝗿 𝗔𝘂𝗱𝗶𝗼 ✅*\n\n`;
         message += `Example -  .video (enter video title)\n`;
         message += `Example - .song (enter video title)\n\n`;
-        message += "manulofficial.vercel.app\n> *⚖️𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 - : ©𝐌𝐫 𝐂𝐲𝐛𝐞𝐫 𝐌𝐚𝐧𝐮𝐥 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 2024💗*";
+        message += "manulofficial.vercel.app\n> *ꜱʜᴀᴅᴏᴡ ᴍᴅ ᴡᴀᴛꜱ ᴀᴘᴘ ʙᴏᴛ ➢*";
 
         // Send the video details with the image
         await conn.sendMessage(from, { image: { url: thumbnailUrl }, caption: message }, { quoted: mek });
