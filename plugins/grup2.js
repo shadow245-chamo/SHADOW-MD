@@ -13,9 +13,11 @@ cmd({
 },
 async(conn, mek, m,{from, prefix, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{                   
-if (!isGroup) return reply(only grup command )
-if (!isBotAdmins) return reply(ඔබ owner නොවෙ ❗)
-if (!isAdmins) return reply(කරුනාකර ශැඩො md බොට් වෙත ඇඩ්මින් ලබා දෙන්න❗)
+    
+    if (!isGroup) return reply('This command can only be used in a group❗.')
+        if (!isBotAdmins) return reply('කරුනාකර ශැඩො md බොට් වෙත ඇඩ්මින් ලබා දෙන්න ❗.')
+        if (!isAdmins) return reply('ඔබ owner නොවෙ ❌.')
+ 
                                   
         await conn.groupSettingUpdate(mek.chat, 'announcement')
         const sendmsg = await conn.sendMessage(mek.chat.G_MUTE)
@@ -38,9 +40,11 @@ cmd({
 },
 async(conn, mek, m,{from, prefix, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{                   
-if (!isGroup) return reply(only grup command ❗)
-if (!isBotAdmins) return reply(ඔබ owner නොවෙ ❗)
-if (!isAdmins) return reply(කරුනාකර ශැඩො md බොට් වෙත ඇඩ්මින් ලබා දෙන්න ❗)
+    
+    if (!isGroup) return reply('This command can only be used in a group❗.')
+        if (!isBotAdmins) return reply('කරුනාකර ශැඩො md බොට් වෙත ඇඩ්මින් ලබා දෙන්න ❗.')
+        if (!isAdmins) return reply('ඔබ owner නොවෙ ❌.')
+ 
                                   
         await conn.groupSettingUpdate(mek.chat, 'not_announcement')
         const sendmsg = await conn.sendMessage(mek.chat.G_UNMUTE)
@@ -62,9 +66,11 @@ cmd({
 },
 async(conn, mek, m,{from, prefix, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{                   
-if (!isGroup) return reply(only grup command ❗)
-if (!isBotAdmins) return reply(ඔබ owner නොවෙ ❗)
-if (!isAdmins) return reply(කරුනාකර ශැඩො md බොට් වෙත ඇඩ්මින් ලබා දෙන්න❗)
+    
+    if (!isGroup) return reply('This command can only be used in a group❗.')
+        if (!isBotAdmins) return reply('කරුනාකර ශැඩො md බොට් වෙත ඇඩ්මින් ලබා දෙන්න ❗.')
+        if (!isAdmins) return reply('ඔබ owner නොවෙ ❌.')
+ 
                                   
          let users = mek.mentionedJid ? mek.mentionedJid : mek.quoted ? mek.quoted.sender : q.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
 		await conn.groupParticipantsUpdate(mek.chat, [users], 'promote').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
@@ -87,9 +93,11 @@ cmd({
 },
 async(conn, mek, m,{from, prefix, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{                   
-if (!isGroup) return reply(only grup command ❗)
-if (!isBotAdmins) return reply(ඔබ owner නොවෙ ❗)
-if (!isAdmins) return reply(කරුනාකර ශැඩො md බොට් වෙත ඇඩ්මින් ලබා දෙන්න ❗)
+    
+    if (!isGroup) return reply('This command can only be used in a group❗.')
+        if (!isBotAdmins) return reply('කරුනාකර ශැඩො md බොට් වෙත ඇඩ්මින් ලබා දෙන්න ❗.')
+        if (!isAdmins) return reply('ඔබ owner නොවෙ ❌.')
+ 
                                   
          	let users = mek.mentionedJid ? mek.mentionedJid : mek.quoted ? mek.quoted.sender : q.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
 		await conn.groupParticipantsUpdate(mek.chat, [users], 'demote').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
@@ -137,9 +145,11 @@ cmd({
 },
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        if (!isGroup) return reply('This command can only be used in a group.')
-        if (!isBotAdmins) return reply('Bot must be an admin to use this command.')
-        if (!isAdmins) return reply('You must be an admin to use this command.')
+            
+    if (!isGroup) return reply('This command can only be used in a group❗.')
+        if (!isBotAdmins) return reply('කරුනාකර ශැඩො md බොට් වෙත ඇඩ්මින් ලබා දෙන්න ❗.')
+        if (!isAdmins) return reply('ඔබ owner නොවෙ ❌.')
+ 
 
         const user = q.split(' ')[0]
         if (!user) return reply('Please provide a phone number to add.')
