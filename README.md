@@ -30,7 +30,6 @@
 ## 🚀 2 step PAIR WEB SHADOW MD WATS APP BOT ➤
 <a href="https://pair-web-public.koyeb.app/"><img src="https://img.shields.io/badge/QR%20OR%20PAIR%20CODE-blue" alt="GET SESSION" width="200"></a>
 
-<a href="https://friendly-doodle-q7p947v9rvxwf6w5j-8000.app.github.dev/"><img src="https://img.shields.io/badge/QR%20OR%20PAIR%20CODE-blue" alt="GET SESSION" width="200"></a>
 
 
 <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
@@ -89,27 +88,6 @@
 ## CRETED BY Lakshan damayantha 👨‍💻
 
 
-## HOW TO DEPLOY SHADOW MD BOT ➤
-
-
-1) 𝙵𝙸𝚁𝚂𝚃 𝙵𝙾𝚁𝙺 𝚃𝙷𝙴 𝚁𝙴𝙿𝙾.
-
-
-2) 𝙿𝙰𝙸𝚁 𝚌𝚘𝚍 𝚃𝙷𝙴𝙽 𝚆𝙸𝙻𝙻 𝙲𝙾𝙼𝙴 𝚂𝙴𝚂𝚂𝙸𝙾𝙽 𝙸𝙳.
-
-
-4) 𝙰𝙽𝙳 𝚂𝙴𝙻𝙴𝙲𝚃 𝙵𝙾𝚁𝙺 𝚁𝙴𝙿𝚘 𝙰𝙽𝙳 𝙳𝙴𝙿𝙻𝙾𝚈 𝚃𝙷𝙴 𝙱𝙾𝚃.
-
-
-5) 𝙳𝙴𝙿𝙻𝙾𝚈 𝙰𝙻𝙻 𝙵𝙻𝙰𝚃𝙵𝙾𝚁𝙼 𝙽𝙾 𝙴𝚁𝚁𝙾𝚁𝚂
-
-
-6) 𝙽𝙾𝚆 𝙴𝙽𝙹𝙾𝚈 𝚃𝙷𝙴 𝚂𝙷𝙰𝙳𝙾𝚆 𝙼𝙳 𝙱𝙾𝚃.
-
-
-# HELLOW GUYS ➤
-  
-
 ## WORKFLOUR DEPLOY COD 🚀➤
 ```
 name: Node.js CI
@@ -146,6 +124,29 @@ jobs:
     - name: Start application
       run: npm start
 ```
+
+
+
+## HOW TO DEPLOY SHADOW MD BOT ➤
+
+
+1) 𝙵𝙸𝚁𝚂𝚃 𝙵𝙾𝚁𝙺 𝚃𝙷𝙴 𝚁𝙴𝙿𝙾.
+
+
+2) 𝙿𝙰𝙸𝚁 𝚌𝚘𝚍 𝚃𝙷𝙴𝙽 𝚆𝙸𝙻𝙻 𝙲𝙾𝙼𝙴 𝚂𝙴𝚂𝚂𝙸𝙾𝙽 𝙸𝙳.
+
+
+4) 𝙰𝙽𝙳 𝚂𝙴𝙻𝙴𝙲𝚃 𝙵𝙾𝚁𝙺 𝚁𝙴𝙿𝚘 𝙰𝙽𝙳 𝙳𝙴𝙿𝙻𝙾𝚈 𝚃𝙷𝙴 𝙱𝙾𝚃.
+
+
+5) 𝙳𝙴𝙿𝙻𝙾𝚈 𝙰𝙻𝙻 𝙵𝙻𝙰𝚃𝙵𝙾𝚁𝙼 𝙽𝙾 𝙴𝚁𝚁𝙾𝚁𝚂
+
+
+6) 𝙽𝙾𝚆 𝙴𝙽𝙹𝙾𝚈 𝚃𝙷𝙴 𝚂𝙷𝙰𝙳𝙾𝚆 𝙼𝙳 𝙱𝙾𝚃.
+
+
+# HELLOW GUYS ➤
+ 
 ## 💭 FOLLOW MY CHANAL
 
 <a href="https://whatsapp.com/channel/0029Vajn0gb8F2pFh7PDqO0c"><img src="https://img.shields.io/badge/Join%20Our%20WhatsApp%20Channel-blue" alt="📎 Join Our WhatsApp Channel" width="350"></a>
