@@ -72,7 +72,11 @@
 ## npm install 📍
 ## npm start 📍
 ## 5 minits connected 🧙‍♂️💭
+<hr>
+<img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
 
+<div align="center">
+    
 ## WORKFLOUR 🚀 ➤
 ## Action go to new work forv and copy the nodel js that is placed under this and put it in new work forv and put session id in config js and deployc➤➤➢
 ## workflour cod 👇
