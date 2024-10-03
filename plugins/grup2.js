@@ -3,7 +3,7 @@ const { cmd, commands } = require('../command')
 
 cmd({
     pattern: "mute",
-    react: "💗",
+    react: "🔒",
     desc: "close a group",
     category: "group",
     use: '.mute',
@@ -30,7 +30,7 @@ l(e)
   
 cmd({
     pattern: "unmute",
-    react: "💗",
+    react: "🔓",
     desc: "open a group",
     category: "group",
     use: '.unmute',
