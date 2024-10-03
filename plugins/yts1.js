@@ -1,0 +1,46 @@
+
+cmd({
+    pattern: "yts1",
+    alias: ["yta1","ytv1","yt1"],
+    desc: "Search and display up to 100 YouTube video details",
+    category: "search",
+    filename: __filename
+},
+async (conn, mek, m, { from, q, reply }) => {
+    try {
+        if (!q) return reply("Please type a Name or Url... 🤖");
+
+        const search = await yts(q);
+        const videos = search.videos.slice(0, 100); // Get only the first 100 videos
+
+        if (videos.length === 0) return reply("No videos found for your query.");
+
+        let message = `*𝗠𝗔𝗡𝗨 𝗠𝗗 𝗬𝗼𝘂𝘁𝘂𝗯𝗲 𝗦𝗲𝗮𝗿𝗰𝗵 𝗥𝗲𝘀𝘂𝗹𝘁 🎥*\n\n`;
+
+        videos.forEach((data, index) => {
+            message += `*No - ${index + 1} ⤵*\n`;
+            message += `🎶 *𝗧𝗶𝘁𝗹𝗲*: _${data.title}_\n`;
+            message += `👤 *𝗖𝗵𝗮𝗻𝗻𝗲𝗹*: _${data.author.name}_\n`;
+            message += `📝 *𝗗𝗲𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻*: _${data.description}_\n`;
+            message += `⏳ *𝗧𝗶𝗺𝗲*: _${data.timestamp}_\n`;
+            message += `⏱️ *𝗔𝗴𝗼*: _${data.ago}_\n`;
+            message += `👁️‍🗨️ *𝗩𝗶𝗲𝘄𝘀*: _${formatViews(data.views)}_\n`;
+            message += `🔗 *𝗟𝗶𝗻𝗸*: ${data.url}\n\n`;
+        });
+
+        message += `*𝗛𝗼𝘄 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗩𝗶𝗱𝗲𝗼 𝗢𝗿 𝗔𝘂𝗱𝗶𝗼 ✅*\n\n`;
+        message += `Example -  .video (enter video title)\n`;
+        message += `Example - .song (enter video title)\n\n`;
+        message += "manulofficial.vercel.app\n> *⚖️𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 - : ©𝐌𝐫 𝐂𝐲𝐛𝐞𝐫 𝐌𝐚𝐧𝐮𝐥 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 2024💗*";
+
+        // Send the video details with the image
+        await conn.sendMessage(from, { image: { url: thumbnailUrl }, caption: message }, { quoted: mek });
+
+        // Send the voice note after sending the message
+        await conn.sendMessage(from, { audio: { url: voiceUrl }, mimetype: 'audio/mp4', ptt: true }, { quoted: mek });
+
+    } catch (e) {
+        console.log(e);
+        reply(`Error: ${e.message}`);
+    }
+});
