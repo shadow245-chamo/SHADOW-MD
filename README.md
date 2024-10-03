@@ -78,7 +78,7 @@
 <div align="center">
     
 ## WORKFLOUR 🚀 ➤
-## Action go to new work forv and copy the nodel js that is placed under this and put it in new work forv and put session id in config js and deployc➤➤➢
+## Action go to new work forv and copy the nodel js that is placed under this and put it in new work forv and put session id in config js and deploy➤➤➢
 ## workflour cod 👇
 ## 2  minits connected 🧙‍♂️💭
 
