@@ -25,7 +25,6 @@ async (conn, mek, m, { from, q, reply }) => {
             message += `📝 *𝗗𝗲𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻*: _${data.description}_\n`;
             message += `⏳ *𝗧𝗶𝗺𝗲*: _${data.timestamp}_\n`;
             message += `⏱️ *𝗔𝗴𝗼*: _${data.ago}_\n`;
-            message += `👁️‍🗨️ *𝗩𝗶𝗲𝘄𝘀*: _${formatViews(data.views)}_\n`;
             message += `🔗 *𝗟𝗶𝗻𝗸*: ${data.url}\n\n`;
         });
 
