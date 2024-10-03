@@ -21,7 +21,7 @@ try{
         const sendmsg = await conn.sendMessage(mek.chat.G_MUTE)
 await conn.sendMessage(from, { react: { text: `✅`, key: mek.key }}) 
 } catch (e) {
-reply('🛑 GROUP IS CLOSED MY BOT OWNER')
+reply('🔒GROUP IS CLOSED MY BOT OWNER')
 l(e)
 }
 })
@@ -48,7 +48,7 @@ try{
         const sendmsg = await conn.sendMessage(mek.chat.G_UNMUTE)
 await conn.sendMessage(from, { react: { text: `✅`, key: mek.key }}) 
 } catch (e) {
-reply('🛑 GROUP IS OPEN MY BOT OWNER')
+reply('🔓GROUP IS OPEN MY BOT OWNER')
 l(e)
 }
 })
@@ -72,10 +72,10 @@ try{
                                   
          let users = mek.mentionedJid ? mek.mentionedJid : mek.quoted ? mek.quoted.sender : q.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
 		await conn.groupParticipantsUpdate(mek.chat, [users], 'promote').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
-	reply('🛑 GROUP ADMIN PROMOTE BY MY BOT OWNER')
+	reply('✅ GROUP ADMIN PROMOTE BY MY BOT OWNER')
 await conn.sendMessage(from, { react: { text: `✅`, key: mek.key }}) 
 } catch (e) {
-reply('*Done ✓✓*')
+reply('*successful ✅*')
 l(e)
 }
 }) 
@@ -99,10 +99,10 @@ try{
                                   
          	let users = mek.mentionedJid ? mek.mentionedJid : mek.quoted ? mek.quoted.sender : q.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
 		await conn.groupParticipantsUpdate(mek.chat, [users], 'demote').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
-reply('🛑 GROUP ADMIN DEMOTE BY MY BOT OWNER')
+reply('✅ GROUP ADMIN DEMOTE BY MY BOT OWNER')
 await conn.sendMessage(from, { react: { text: `✅`, key: mek.key }}) 
 } catch (e) {
-reply('*Done ✓✓*')
+reply('*successful ✅*')
 l(e)
 }
 })
@@ -138,7 +138,7 @@ cmd({
     pattern: "add",
     desc: "Add a member to the group.",
     category: "group",
-    react: "➕",
+    react: "✅",
     filename: __filename
 },
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
