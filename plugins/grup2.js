@@ -13,7 +13,7 @@ cmd({
 },
 async(conn, mek, m,{from, prefix, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{                   
-if (!isGroup) return reply(only GROUP command )
+if (!isGroup) return reply(only grup command )
 if (!isBotAdmins) return reply(ඔබ owner නොවෙ ❗)
 if (!isAdmins) return reply(කරුනාකර ශැඩො md බොට් වෙත ඇඩ්මින් ලබා දෙන්න❗)
                                   
@@ -38,7 +38,7 @@ cmd({
 },
 async(conn, mek, m,{from, prefix, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{                   
-if (!isGroup) return reply(ONL GROUP command ❗)
+if (!isGroup) return reply(only grup command ❗)
 if (!isBotAdmins) return reply(ඔබ owner නොවෙ ❗)
 if (!isAdmins) return reply(කරුනාකර ශැඩො md බොට් වෙත ඇඩ්මින් ලබා දෙන්න ❗)
                                   
@@ -62,7 +62,7 @@ cmd({
 },
 async(conn, mek, m,{from, prefix, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{                   
-if (!isGroup) return reply(ONL GROUP command ❗)
+if (!isGroup) return reply(only grup command ❗)
 if (!isBotAdmins) return reply(ඔබ owner නොවෙ ❗)
 if (!isAdmins) return reply(කරුනාකර ශැඩො md බොට් වෙත ඇඩ්මින් ලබා දෙන්න❗)
                                   
@@ -87,7 +87,7 @@ cmd({
 },
 async(conn, mek, m,{from, prefix, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{                   
-if (!isGroup) return reply(ONL GROUP command ❗)
+if (!isGroup) return reply(only grup command ❗)
 if (!isBotAdmins) return reply(ඔබ owner නොවෙ ❗)
 if (!isAdmins) return reply(කරුනාකර ශැඩො md බොට් වෙත ඇඩ්මින් ලබා දෙන්න ❗)
                                   
