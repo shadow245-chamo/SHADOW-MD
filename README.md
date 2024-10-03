@@ -67,7 +67,7 @@
 
 
 ## CODE SPACE 🚀➤
-##Cod green button you go to codespace and put config js put sesson id and deploy💭
+## Cod green button you go to codespace and put config js put sesson id and deploy💭
 ## RUN Command ➤➤➢
 ## npm install 📍
 ## npm start 📍
