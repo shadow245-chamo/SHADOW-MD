@@ -46,7 +46,6 @@ title: 'ꜱʜᴀᴅᴏᴡ ᴍᴅ ᴡᴀᴛꜱ ᴀᴘᴘ ʙᴏᴛ ⚟',
 body: 'ᴀ ꜱɪᴍᴘʟᴇ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ',
 mediaType: 1,
 sourceUrl: "https://whatsapp.com/channel/0029Val6g7EBadmagKxuYi1R" ,
-thumbnailUrl: `https://i.imgur.com/2p7gHUD.jpeg` ,
 renderLargerThumbnail: true,
 showAdAttribution: false
 }
