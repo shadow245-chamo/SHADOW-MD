@@ -74,7 +74,7 @@ cmd({
             }
          
 	await conn.sendMessage(from, {
-            audio: { url: 'https://github.com/Shadowmd99/V-6-menu/raw/main/Alivevvv6.mp3' },
+            audio: { url: 'https://github.com/Shadowteach/shadow-raw/raw/refs/heads/main/BUTTON%20ALIVE.mp3' },
             mimetype: 'audio/mp4',
             ptt: true
         }, { quoted: mek });
