@@ -326,6 +326,12 @@ conn.updateProfileStatus(`𝗦𝗛𝗔𝗗𝗢𝗪 𝗠𝗗 💗 𝗕𝗘𝗦�
                 })
             }
 
+//=====Auto-Read-Cmd==========
+if (isCmd && config.AUTO_READ_CMD === "true") {
+              await conn.readMessages([mek.key])  // Mark command as read
+}
+//Auto Typing
+        if(config.AUTO_TYPING === 'true'){await conn.sendPresenceUpdate('composing', from);}
 //====================autovoive=====================================✓
 
 if (config.AUTO_VOICE === 'true') {
