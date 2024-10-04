@@ -65,6 +65,11 @@
 ## RAILWAY 🚀➤
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app)
 
+## Netlify 🚀➤
+<p align="center">
+<a href='https://app.netlify.com/' target="_blank"><img alt='Netlify' src='https://img.shields.io/badge/-Netlify Deploy-blue?style=for-the-badge&logo=netlify&logoColor=white'/< width=150 height=28/p></a> <h6>
+
+
 
 ## CODE SPACE 🚀➤
 ## Cod green button you go to codespace and put config js put sesson id and deploy💭
