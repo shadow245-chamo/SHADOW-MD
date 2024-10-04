@@ -31,7 +31,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
 > *\`➤ AGO\`:* ${data.ago}
 
-*◄❪ Reply This Message With Nambars ❫►*
+*✦ Reply This Message With Nambars ✦*
 ╭────────────────────◉◉➤
 *➢ 1 Audio 🎧*
 *➢ 2 Audio With Document 📁*
@@ -102,7 +102,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
 > *\`➤ AGO\`:* ${data.ago}
 
-*◄❪ Reply This Message With Nambars ❫►*
+*✦ Reply This Message With Nambars ✦*
 ╭────────────────────◉◉➤
 *➢ 1 Video 🎥*
 *➢ 2 Video With Document 📁*
