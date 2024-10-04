@@ -6,8 +6,8 @@ const fg = require('api-dylux');
 cmd({
     pattern: 'song',
     desc: 'download songs',
-    alias: ["yt","play","ytmp3doc"],
-    react: "🎶",
+    alias: ["yt","play","ytmp3"],
+    react: "🎧",
     category: 'download',
     filename: __filename
 },
@@ -33,8 +33,8 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
 *◄❪ Reply This Message With Nambars ❫►*
 ╭────────────────────◉◉➤
-*➢ 1.1 Audio*
-*➢ 1.2 Audio With Document*
+*➢ 1 Audio 🎧*
+*➢ 2 Audio With Document 📁*
 ╰────────────────────◉◉➤
 *ꜱʜᴀᴅᴏᴡ ᴍᴅ ᴏᴡɴᴇʀ ʙʏ ʟᴀᴋꜱʜᴀɴ ᴛᴇᴀᴄʜ ➤*`;
 
@@ -48,12 +48,12 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
             if (msg.message.extendedTextMessage.contextInfo && msg.message.extendedTextMessage.contextInfo.stanzaId === vv.key.id) {
                 switch (selectedOption) {
-                    case '1.1':
+                    case '1':
                         let down = await fg.yta(url);
                         let downloadUrl = down.dl_url;
                         await conn.sendMessage(from, { audio: { url:downloadUrl }, caption: '*ꜱʜᴀᴅᴏᴡ ᴍᴅ ᴏᴡɴᴇʀ ʙʏ ʟᴀᴋꜱʜᴀɴ ᴛᴇᴀᴄʜ ➤*', mimetype: 'audio/mpeg'},{ quoted: mek });
                         break;
-                    case '1.2':               
+                    case '2':               
                         // Send Document File
                         let downdoc = await fg.yta(url);
                         let downloaddocUrl = downdoc.dl_url;
@@ -77,8 +77,8 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 cmd({
     pattern: 'video',
     desc: 'download videos',
-    alias: ["video2","videos","ytvideo3doc"],
-    react: "📽️",
+    alias: ["video2","videos","ytvideo3"],
+    react: "🎥",
     category: 'download',
     filename: __filename
 },
@@ -104,8 +104,8 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
 *◄❪ Reply This Message With Nambars ❫►*
 ╭────────────────────◉◉➤
-*➢ 2.1 Video*
-*➢ 2.2 Video With Document*
+*➢ 1 Video 🎥*
+*➢ 2 Video With Document 📁*
 ╰────────────────────◉◉➤
 *ꜱʜᴀᴅᴏᴡ ᴍᴅ ᴏᴡɴᴇʀ ʙʏ ʟᴀᴋꜱʜᴀɴ ᴛᴇᴀᴄʜ ➤*`;
 
@@ -119,15 +119,16 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
             if (msg.message.extendedTextMessage.contextInfo && msg.message.extendedTextMessage.contextInfo.stanzaId === vv.key.id) {
                 switch (selectedOption) {
-                    case '2.1':
+                    case '1':
                         let downvid = await fg.ytv(url);
                         let downloadvUrl = downvid.dl_url;
                         await conn.sendMessage(from, { video : { url:downloadvUrl }, caption: '*ꜱʜᴀᴅᴏᴡ ᴍᴅ ᴏᴡɴᴇʀ ʙʏ ʟᴀᴋꜱʜᴀɴ ᴛᴇᴀᴄʜ ➤*', mimetype: 'video/mp4'},{ quoted: mek });
                         break;
-                    case '2.2':
+                    case '2':
                         let downviddoc = await fg.ytv(url);
                         let downloadvdocUrl = downviddoc.dl_url;
                         await conn.sendMessage(from, { document: { url:downloadvdocUrl }, caption: '*ꜱʜᴀᴅᴏᴡ ᴍᴅ ᴏᴡɴᴇʀ ʙʏ ʟᴀᴋꜱʜᴀɴ ᴛᴇᴀᴄʜ ➤*', mimetype: 'video/mp4', fileName:data.title + ".mp4" }, { quoted: mek });
+                        await conn.sendMessage(from, { react: { text: '✅', key: mek.key } })
                         break;
                     default:
                         reply("Invalid option. Please select a valid option🔴");
