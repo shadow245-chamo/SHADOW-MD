@@ -1,5 +1,6 @@
 const config = require('../config');
 const { cmd, commands } = require('../command');
+const { default: makeWASocket, useMultiFileAuthState, WA_DEFAULT_EPHEMERAL, jidNormalizedUser, proto, getDevice, generateWAMessageFromContent, fetchLatestBaileysVersion, makeInMemoryStore, getContentType, generateForwardMessageContent, downloadContentFromMessage, jidDecode } = require('@whiskeysockets/baileys')
 //------------------------------Get Group Admins-----------------------------------------------
 cmd({
     pattern: "admins",
