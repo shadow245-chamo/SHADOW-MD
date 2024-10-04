@@ -14,7 +14,7 @@ cmd({
     alias: ["tt"],
     desc: "Download tt videos",
     category: "download",
-    react: "📁",
+    react: "📸",
     filename: __filename
 },
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
@@ -25,9 +25,9 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
 *◄❪ Reply This Message With Nambars ❫►*
 ╭────────────────────────────────◉◉➤
-*➢ 1 Download Video With Watermark ➤*
-*➢ 2 Download Video Without Watermark ➤*
-*➢ 3 Download Audio ➤*
+*➢ 1 Download Video ❪ With ❫ Watermark 🎥*
+*➢ 2 Download Video ❪ Without ❫ Watermark 🎥*
+*➢ 3 Download Audio 🎧*
 ╰────────────────────────────────◉◉➤
 *ꜱʜᴀᴅᴏᴡ ᴍᴅ ᴏᴡɴᴇʀ ʙʏ ʟᴀᴋꜱʜᴀɴ ᴛᴇᴀᴄʜ ➤*`;
 
@@ -51,7 +51,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     await conn.sendMessage(from, { audio: { url: data.data.audio }, mimetype: "audio/mpeg" }, { quoted: mek })
                         break;
                     default:
-                        reply("Invalid option. Please select a valid option🔴");
+                        reply("Invalid option. Please select a valid option🚀");
                 }
 
             }
