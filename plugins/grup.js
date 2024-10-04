@@ -20,7 +20,7 @@ async (conn, mek, m, {
             .join('\n');
 
         return await conn.sendMessage(from, {
-            text: `*Group Admins:*\n\n${admins}`,
+            text: `*Group Admins shadow md bot 🧙‍♂️💗:*\n\n${admins}`,
             mentions: groupMetadata.participants
                 .filter(p => p.admin === 'admin' || p.admin === 'superadmin')
                 .map(admin => admin.id)
@@ -210,7 +210,7 @@ async (conn, mek, m, {
         const mentions = groupMetadata.participants.map(p => p.id);
         
         return await conn.sendMessage(from, {
-            text: `Mentioning everyone:\n\n${members}`,
+            text: `Mentioning everyone shadow md bot 🧙‍♂️💗:\n\n${members}`,
             mentions
         }, { quoted: mek });
 
