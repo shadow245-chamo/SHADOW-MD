@@ -19,7 +19,7 @@
      
  [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F01&lines=ＳＨＡＤＯＷ+ＭＤ+V6+WATSPP+BOT)](https://git.io/typing-svg)
 
-## VERSION 7v NEXT UP DATE ⚟
+## VERSION 7 V COMING ZONE 🚀💗 ⚟
 
 
 ## 🚀 1 step SHADOW MD FORK NOW ➤ 
