@@ -33,12 +33,6 @@ async (conn, mek, m, { from, q, reply }) => {
         message += `Example - .song (enter video title)\n\n`;
         message += "manulofficial.vercel.app\n> *ꜱʜᴀᴅᴏᴡ ᴍᴅ ᴡᴀᴛꜱ ᴀᴘᴘ ʙᴏᴛ ➢*";
 
-        // Send the video details with the image
-        await conn.sendMessage(from, { image: { url: thumbnailUrl }, caption: message }, { quoted: mek });
-
-        // Send the voice note after sending the message
-        await conn.sendMessage(from, { audio: { url: voiceUrl }, mimetype: 'audio/mp4', ptt: true }, { quoted: mek });
-
     } catch (e) {
         console.log(e);
         reply(`Error: ${e.message}`);
