@@ -11,7 +11,7 @@ const apilink = 'https://dark-yasiya-news-apis.vercel.app/api' // API LINK ( DO 
 cmd({
     pattern: "hirunews",
     alias: ["hiru","news1"],
-    react: "💭",
+    react: "📍",
     desc: "",
     category: "news",
     use: '.hirunews',
@@ -23,15 +23,16 @@ try{
 const news = await fetchJson(`${apilink}/hiru`)
   
 const msg = `
-           🌞 *HIRU NEWS* 🌞
+           ❮❮ 𝗦𝗛𝗔𝗗𝗢𝗪 𝗠𝗗 𝗛𝗜𝗥𝗨 𝗡𝗘𝗪𝗦.𝗟𝗞 ❯❯
 
        
 ➤ *Title* - ${news.result.title}
 
 ➤ *News* - ${news.result.desc}
 
-➤ *Link* - ${news.result.url}`
+➤ *Link* - ${news.result.url}
 
+> ❯❯ ꜱʜᴀᴅᴏᴡ-ᴍᴅ ᴡᴀᴛꜱ ᴀᴘᴘ ʙᴏᴛ ➣`
 
 await conn.sendMessage( from, { image: { url: news.result.image || '' }, caption: msg }, { quoted: mek })
 } catch (e) {
@@ -45,7 +46,7 @@ reply(e)
 cmd({
     pattern: "sirasanews",
     alias: ["sirasa","news2"],
-    react: "🗯️",
+    react: "📍",
     desc: "",
     category: "news",
     use: '.sirasa',
@@ -57,14 +58,16 @@ try{
 const news = await fetchJson(`${apilink}/sirasa`)
   
 const msg = `
-           🗯️ *SIRASA NEWS* 🗯️
+          ❮❮ 𝗦𝗛𝗔𝗗𝗢𝗪 𝗠𝗗 𝗦𝗜𝗥𝗔𝗦𝗔 𝗡𝗘𝗪𝗦.𝗟𝗞 ❯❯
 
        
 ➤ *Title* - ${news.result.title}
 
 ➤ *News* - ${news.result.desc}
 
-➤ *Link* - ${news.result.url} `
+➤ *Link* - ${news.result.url}
+
+> ❯❯ ꜱʜᴀᴅᴏᴡ-ᴍᴅ ᴡᴀᴛꜱ ᴀᴘᴘ ʙᴏᴛ ➣`
 
 
 await conn.sendMessage( from, { image: { url: news.result.image || '' }, caption: msg }, { quoted: mek })
@@ -79,7 +82,7 @@ reply(e)
 cmd({
     pattern: "derananews",
     alias: ["derana","news3"],
-    react: "🗯️",
+    react: "📍",
     desc: "",
     category: "news",
     use: '.derana',
@@ -91,16 +94,16 @@ try{
 const news = await fetchJson(`${apilink}/derana`)
   
 const msg = `
-           🔊 *DERANA NEWS * 🔊
+           ❮❮ 𝗦𝗛𝗔𝗗𝗢𝗪 𝗠𝗗 𝗗𝗘𝗥𝗔𝗡𝗔 𝗡𝗘𝗪𝗦.𝗟𝗞 ❯❯
 
        
 ➤ *Title* - ${news.result.title}
 
 ➤ *News* - ${news.result.desc}
 
-➤ *Date* - ${news.result.date}
+➤ *Link* - ${news.result.url}
 
-➤ *Link* - ${news.result.url} `
+> ❯❯ ꜱʜᴀᴅᴏᴡ-ᴍᴅ ᴡᴀᴛꜱ ᴀᴘᴘ ʙᴏᴛ ➣`
 
 
 await conn.sendMessage( from, { image: { url: news.result.image || '' }, caption: msg }, { quoted: mek })
