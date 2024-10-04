@@ -23,7 +23,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         const data = await fetchJson(`${baseUrl}/api/tiktokdl?url=${q}`);
         let desc = ` *❮❮❮ 𝗦𝗛𝗔𝗗𝗢𝗪 𝗠𝗗 𝗧𝗜𝗞 𝗧𝗢𝗞 𝗗𝗢𝗪𝗡𝗟𝗢𝗗𝗘𝗥 ❯❯❯*
 
-*◄❪ Reply This Message With Nambars ❫►*
+> *\`➤Reply This Message With Nambars\`*
 ╭────────────────────────────────◉◉➤
 *➢ 1 Download Video ❪ With ❫ Watermark 🎥*
 *➢ 2 Download Video ❪ Without ❫ Watermark 🎥*
