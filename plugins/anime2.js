@@ -1,7 +1,6 @@
 const axios = require('axios');
 const { cmd, commands } = require('../command');
 //=========anime=====//
-
 cmd({
     pattern: "anime1",
     desc: "Animal image.",
