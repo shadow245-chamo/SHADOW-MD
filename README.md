@@ -79,7 +79,8 @@
 ## npm install 📍
 ## npm start 📍
 ## 5 minits connected 🧙‍♂️💭
-<hr>
+
+
 <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
 
 <div align="center">
