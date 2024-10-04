@@ -15,7 +15,7 @@ let dec = `*👋 Hello ${pushname}*
 
 *❮❮ 👨‍💻💭 Ｉ ａｍ  🫱🏻‍🫲🏻😻🤍*
 
-🔐❮❮ 𝗦𝗛𝗔𝗗𝗢𝗪 𝗠𝗗 𝗠𝗔𝗜𝗡 𝗢𝗪𝗡𝗘𝗥 🚀
+🔐❮❮ 𝗦𝗛𝗔𝗗𝗢𝗪 𝗠𝗗 𝗠𝗔𝗜𝗡 𝗢𝗪𝗡𝗘𝗥 ➤ 🚀
 
 *❮ɪ ᴀᴍ - 𝚂𝙷𝙰𝙳𝙾𝚆 𝙼𝙳 👾🖤*
 
@@ -31,7 +31,7 @@ let dec = `*👋 Hello ${pushname}*
 `
 await conn.sendMessage(from,{image:{url: `https://i.imgur.com/j6U1bJq.jpeg`},caption:dec},{quoted:mek});
 await conn.sendMessage(from, {
-            audio: { url: 'https://github.com/Shadowmd99/V-6-menu/raw/main/Shadow%206%20v%20owner%20%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB.mp3' },
+            audio: { url: 'https://github.com/Shadowteach/shadow-raw/raw/refs/heads/main/NEW%20V%206%20button%20owne.mp3' },
             mimetype: 'audio/mp4',
             ptt: true
         }, { quoted: mek });
