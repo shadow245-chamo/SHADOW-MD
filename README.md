@@ -74,10 +74,15 @@
 <div align="center">
 
 ## CODE SPACE 🚀➤
+
 ## Cod green button you go to codespace and put config js put sesson id and deploy💭
+
 ## RUN Command ➤➤➢
+
 ## npm install 📍
+
 ## npm start 📍
+
 ## 5 minits connected 🧙‍♂️💭
 
 
@@ -85,7 +90,8 @@
 
 <div align="center">
     
-## WORKFLOUR 🚀 ➤
+ ## WORKFLOUR 🚀 ➤
+
 ## Action go to new work forv and copy the nodel js that is placed under this and put it in new work forv and put session id in config js and deploy➤➤➢
 ## workflour cod 👇
 ## 2  minits connected 🧙‍♂️💭
