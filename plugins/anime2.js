@@ -27,7 +27,7 @@ console.log(e)
 reply(`${e}`)
 }
 })
-
+//================//
 cmd({
     pattern: "anime2",
     desc: "Animal image.",
@@ -54,7 +54,7 @@ reply(`${e}`)
 }
 })
 
-
+//==================//
 cmd({
     pattern: "anime3",
     desc: "Animal image.",
@@ -81,7 +81,7 @@ reply(`${e}`)
 }
 })
 
-
+//======================//
 cmd({
     pattern: "anime4",
     desc: "Animal image.",
@@ -108,7 +108,7 @@ reply(`${e}`)
 }
 })
 
-
+//=======================//
 cmd({
     pattern: "anime5",
     desc: "Animal image.",
