@@ -1,135 +1,44 @@
-const axios = require('axios');
-const { cmd, commands } = require('../command');
-//=========anime=====//
-cmd({
-    pattern: "anime1",
-    desc: "Animal image.",
-    react: "🧚‍♀️",
-    category: "other",
-    filename: __filename
-},
-async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-try{
+//══════════════════════════════════════════════════════════════════════════════════════════════════════//
+//                                                                                                      //
+//                                   // 𝗦𝗛𝗔𝗗𝗢𝗪  𝐁𝐎𝐓                                                 //
+//                                                                                                      //
+//                                         Ｖ：6.0                                                       //
 
-await conn.sendMessage(from,{image :{ url: `https://i.waifu.pics/aD7t0Bc.jpg` },caption: '*ꜱʜᴀᴅᴏᴡ ᴍᴅ ꜰᴀᴠ ᴀɴɪᴍᴇ➤*' },{quoted:mek});
+//
+//──────────────────────────────────────//──────────────────────────────────────
+//
 
-await conn.sendMessage(from,{image :{ url: `https://i.waifu.pics/PQO5wPN.jpg` },caption: '*ꜱʜᴀᴅᴏᴡ ᴍᴅ ꜰᴀᴠ ᴀɴɪᴍᴇ➤*' },{quoted:mek});
+//░██████╗██╗░░██╗░█████╗░██████╗░░█████╗░░██╗░░░░░░░██╗
+//██╔════╝██║░░██║██╔══██╗██╔══██╗██╔══██╗░██║░░██╗░░██║
+//╚█████╗░███████║███████║██║░░██║██║░░██║░╚██╗████╗██╔╝
+//░╚═══██╗██╔══██║██╔══██║██║░░██║██║░░██║░░████╔═████║░
+//██████╔╝██║░░██║██║░░██║██████╔╝╚█████╔╝░░╚██╔╝░╚██╔╝░
+//╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═════╝░░╚════╝░░░░╚═╝░░░╚═╝░░
 
-await conn.sendMessage(from,{image :{ url: `https://i.waifu.pics/5At1P4A.jpg` },caption: '*ꜱʜᴀᴅᴏᴡ ᴍᴅ ꜰᴀᴠ ᴀɴɪᴍᴇ➤*' },{quoted:mek});
+//███╗░░░███╗██████╗░
+//████╗░████║██╔══██╗
+//██╔████╔██║██║░░██║
+//██║╚██╔╝██║██║░░██║
+//██║░╚═╝░██║██████╔╝
+//╚═╝░░░░░╚═╝╚═════╝░
 
-await conn.sendMessage(from,{image :{ url: `https://i.waifu.pics/MjtH3Ha.jpg` },caption: '*ꜱʜᴀᴅᴏᴡ ᴍᴅ ꜰᴀᴠ ᴀɴɪᴍᴇ➤*' },{quoted:mek});
+//██╗░░░██╗███████╗██████╗░░██████╗██╗░█████╗░███╗░░██╗
+//██║░░░██║██╔════╝██╔══██╗██╔════╝██║██╔══██╗████╗░██║
+//╚██╗░██╔╝█████╗░░██████╔╝╚█████╗░██║██║░░██║██╔██╗██║
+//░╚████╔╝░██╔══╝░░██╔══██╗░╚═══██╗██║██║░░██║██║╚████║
+//░░╚██╔╝░░███████╗██║░░██║██████╔╝██║╚█████╔╝██║░╚███║
+//░░░╚═╝░░░╚══════╝╚═╝░░╚═╝╚═════╝░╚═╝░╚════╝░╚═╝░░╚══╝
 
-await conn.sendMessage(from,{image :{ url: `https://i.waifu.pics/QQW7VKy.jpg` },caption: '*ꜱʜᴀᴅᴏᴡ ᴍᴅ ꜰᴀᴠ ᴀɴɪᴍᴇ➤*' },{quoted:mek});
+//░█████╗░██╗░░░██╗
+//██╔═══╝░██║░░░██║
+//██████╗░╚██╗░██╔╝
+//██╔══██╗░╚████╔╝░
+//╚█████╔╝░░╚██╔╝░░
+//░╚════╝░░░░╚═╝░░░
+//══════════════════════════════════════════════════════════════════════════════════════════════════════//
+//*
+//  * @project_name : SHADOW-MD
+//  * @author : LAKSHAN DAMAYANTHA
+//  * @description : SHADOW ,A Multi-functional whatsapp user bot.
 
-}catch(e){
-console.log(e)
-reply(`${e}`)
-}
-})
-//================//
-cmd({
-    pattern: "anime2",
-    desc: "Animal image.",
-    react: "🧚‍♀️",
-    category: "other",
-    filename: __filename
-},
-async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-try{
-
-await conn.sendMessage(from,{image :{ url: `https://i.waifu.pics/0r1Bn88.jpg` },caption: '*ꜱʜᴀᴅᴏᴡ ᴍᴅ ꜰᴀᴠ ᴀɴɪᴍᴇ➤*' },{quoted:mek});
-
-await conn.sendMessage(from,{image :{ url: `https://i.waifu.pics/2Xdpuov.png` },caption: '*ꜱʜᴀᴅᴏᴡ ᴍᴅ ꜰᴀᴠ ᴀɴɪᴍᴇ➤*' },{quoted:mek});
-
-await conn.sendMessage(from,{image :{ url: `https://i.waifu.pics/0hx-3AP.png` },caption: '*ꜱʜᴀᴅᴏᴡ ᴍᴅ ꜰᴀᴠ ᴀɴɪᴍᴇ➤*' },{quoted:mek});
-
-await conn.sendMessage(from,{image :{ url: `https://i.waifu.pics/q054x0_.png` },caption: '*ꜱʜᴀᴅᴏᴡ ᴍᴅ ꜰᴀᴠ ᴀɴɪᴍᴇ➤*' },{quoted:mek});
-
-await conn.sendMessage(from,{image :{ url: `https://i.waifu.pics/4lyqRvd.jpg` },caption: '*ꜱʜᴀᴅᴏᴡ ᴍᴅ ꜰᴀᴠ ᴀɴɪᴍᴇ➤*' },{quoted:mek});
-
-}catch(e){
-console.log(e)
-reply(`${e}`)
-}
-})
-
-//==================//
-cmd({
-    pattern: "anime3",
-    desc: "Animal image.",
-    react: "🧚‍♀️",
-    category: "other",
-    filename: __filename
-},
-async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-try{
-
-await conn.sendMessage(from,{image :{ url: `https://i.waifu.pics/gnpc_Lr.jpeg` },caption: '*ꜱʜᴀᴅᴏᴡ ᴍᴅ ꜰᴀᴠ ᴀɴɪᴍᴇ➤*' },{quoted:mek});
-
-await conn.sendMessage(from,{image :{ url: `https://i.waifu.pics/P6X-ph6.jpg` },caption: '*ꜱʜᴀᴅᴏᴡ ᴍᴅ ꜰᴀᴠ ᴀɴɪᴍᴇ➤*' },{quoted:mek});
-
-await conn.sendMessage(from,{image :{ url: `https://i.waifu.pics/~p5W9~k.png` },caption: '*ꜱʜᴀᴅᴏᴡ ᴍᴅ ꜰᴀᴠ ᴀɴɪᴍᴇ➤*' },{quoted:mek});
-
-await conn.sendMessage(from,{image :{ url: `https://i.waifu.pics/7Apu5C9.jpg` },caption: '*ꜱʜᴀᴅᴏᴡ ᴍᴅ ꜰᴀᴠ ᴀɴɪᴍᴇ➤*' },{quoted:mek});
-
-await conn.sendMessage(from,{image :{ url: `https://i.waifu.pics/OTRfON6.jpg` },caption: '*ꜱʜᴀᴅᴏᴡ ᴍᴅ ꜰᴀᴠ ᴀɴɪᴍᴇ➤*' },{quoted:mek});
-
-}catch(e){
-console.log(e)
-reply(`${e}`)
-}
-})
-
-//======================//
-cmd({
-    pattern: "anime4",
-    desc: "Animal image.",
-    react: "🧚‍♀️",
-    category: "other",
-    filename: __filename
-},
-async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-try{
-
-await conn.sendMessage(from,{image :{ url: `https://i.waifu.pics/aGgUm80.jpg` },caption: '*ꜱʜᴀᴅᴏᴡ ᴍᴅ ꜰᴀᴠ ᴀɴɪᴍᴇ➤*' },{quoted:mek});
-
-await conn.sendMessage(from,{image :{ url: `https://i.waifu.pics/i~RQhRD.png` },caption: '*ꜱʜᴀᴅᴏᴡ ᴍᴅ ꜰᴀᴠ ᴀɴɪᴍᴇ➤*' },{quoted:mek});
-
-await conn.sendMessage(from,{image :{ url: `https://i.waifu.pics/94LH-aU.jpg` },caption: '*ꜱʜᴀᴅᴏᴡ ᴍᴅ ꜰᴀᴠ ᴀɴɪᴍᴇ➤*' },{quoted:mek});
-
-await conn.sendMessage(from,{image :{ url: `https://i.waifu.pics/V8hvqfK.jpg` },caption: '*ꜱʜᴀᴅᴏᴡ ᴍᴅ ꜰᴀᴠ ᴀɴɪᴍᴇ➤*' },{quoted:mek});
-
-await conn.sendMessage(from,{image :{ url: `https://i.waifu.pics/lMiXE7j.png` },caption: '*ꜱʜᴀᴅᴏᴡ ᴍᴅ ꜰᴀᴠ ᴀɴɪᴍᴇ➤*' },{quoted:mek});
-
-}catch(e){
-console.log(e)
-reply(`${e}`)
-}
-})
-
-//=======================//
-cmd({
-    pattern: "anime5",
-    desc: "Animal image.",
-    react: "🧚‍♀️",
-    category: "other",
-    filename: __filename
-},
-async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-try{
-
-await conn.sendMessage(from,{image :{ url: `https://i.waifu.pics/-ABlAvr.jpg` },caption: '*ꜱʜᴀᴅᴏᴡ ᴍᴅ ꜰᴀᴠ ᴀɴɪᴍᴇ➤*' },{quoted:mek});
-
-await conn.sendMessage(from,{image :{ url: `https://i.waifu.pics/HNEg0-Q.png` },caption: '*ꜱʜᴀᴅᴏᴡ ᴍᴅ ꜰᴀᴠ ᴀɴɪᴍᴇ➤*' },{quoted:mek});
-
-await conn.sendMessage(from,{image :{ url: `https://i.waifu.pics/3x~ovC6.jpg` },caption: '*ꜱʜᴀᴅᴏᴡ ᴍᴅ ꜰᴀᴠ ᴀɴɪᴍᴇ➤*' },{quoted:mek});
-
-await conn.sendMessage(from,{image :{ url: `https://i.waifu.pics/brv-GJu.jpg` },caption: '*ꜱʜᴀᴅᴏᴡ ᴍᴅ ꜰᴀᴠ ᴀɴɪᴍᴇ➤*' },{quoted:mek});
-
-await conn.sendMessage(from,{image :{ url: `https://i.waifu.pics/FWE8ggD.png` },caption: '*ꜱʜᴀᴅᴏᴡ ᴍᴅ ꜰᴀᴠ ᴀɴɪᴍᴇ➤*' },{quoted:mek});
-
-}catch(e){
-console.log(e)
-reply(`${e}`)
-}
-})
+const _0xc1aca5=_0x13c8;(function(_0x4b93da,_0xca8df2){const _0x2884cb=_0x13c8,_0x2c92e6=_0x4b93da();while(!![]){try{const _0xe717b4=-parseInt(_0x2884cb(0x88))/0x1+-parseInt(_0x2884cb(0x7b))/0x2*(-parseInt(_0x2884cb(0x6c))/0x3)+parseInt(_0x2884cb(0x73))/0x4+-parseInt(_0x2884cb(0x79))/0x5+parseInt(_0x2884cb(0x86))/0x6+-parseInt(_0x2884cb(0x77))/0x7+parseInt(_0x2884cb(0x7f))/0x8;if(_0xe717b4===_0xca8df2)break;else _0x2c92e6['push'](_0x2c92e6['shift']());}catch(_0xe8c773){_0x2c92e6['push'](_0x2c92e6['shift']());}}}(_0x18a2,0x7f420));const axios=require('axios'),{cmd,commands}=require(_0xc1aca5(0x72));function _0x13c8(_0x4952a0,_0x113bf9){const _0x18a28b=_0x18a2();return _0x13c8=function(_0x13c8e1,_0x3c3d54){_0x13c8e1=_0x13c8e1-0x6a;let _0x5b082e=_0x18a28b[_0x13c8e1];return _0x5b082e;},_0x13c8(_0x4952a0,_0x113bf9);}function _0x18a2(){const _0x424ea7=['anime1','3462249lnlHCE','*ꜱʜᴀᴅᴏᴡ\x20ᴍᴅ\x20ꜰᴀᴠ\x20ᴀɴɪᴍᴇ➤*','5158610rfyyPl','https://i.waifu.pics/HNEg0-Q.png','2iqVDoc','https://i.waifu.pics/aGgUm80.jpg','https://i.waifu.pics/aD7t0Bc.jpg','https://i.waifu.pics/P6X-ph6.jpg','5746096ApVSeU','https://i.waifu.pics/94LH-aU.jpg','https://i.waifu.pics/0r1Bn88.jpg','🧚‍♀️','anime4','https://i.waifu.pics/7Apu5C9.jpg','log','978342lSLQLj','https://i.waifu.pics/i~RQhRD.png','371160zmaCGy','https://i.waifu.pics/gnpc_Lr.jpeg','sendMessage','https://i.waifu.pics/q054x0_.png','https://i.waifu.pics/~p5W9~k.png','Animal\x20image.','anime3','other','2706867EMkSlT','https://i.waifu.pics/5At1P4A.jpg','https://i.waifu.pics/OTRfON6.jpg','https://i.waifu.pics/4lyqRvd.jpg','https://i.waifu.pics/2Xdpuov.png','https://i.waifu.pics/-ABlAvr.jpg','../command','2540516AcZOKK','https://i.waifu.pics/MjtH3Ha.jpg','https://i.waifu.pics/PQO5wPN.jpg'];_0x18a2=function(){return _0x424ea7;};return _0x18a2();}cmd({'pattern':_0xc1aca5(0x76),'desc':_0xc1aca5(0x8d),'react':_0xc1aca5(0x82),'category':_0xc1aca5(0x6b),'filename':__filename},async(_0x2ab8b3,_0x555ef7,_0x2fe08d,{from:_0x904350,quoted:_0x540b7a,body:_0x95651e,isCmd:_0x46a513,command:_0x1a2ee7,args:_0x398843,q:_0xcf2608,isGroup:_0x50ead6,sender:_0x367cef,senderNumber:_0x3417b0,botNumber2:_0xdcfef5,botNumber:_0x489912,pushname:_0xd796da,isMe:_0x139157,isOwner:_0x2900af,groupMetadata:_0x1aa996,groupName:_0x5e7b92,participants:_0x39962e,groupAdmins:_0x4e4694,isBotAdmins:_0x426977,isAdmins:_0x352b41,reply:_0x43fdb6})=>{const _0x1b1684=_0xc1aca5;try{await _0x2ab8b3[_0x1b1684(0x8a)](_0x904350,{'image':{'url':_0x1b1684(0x7d)},'caption':_0x1b1684(0x78)},{'quoted':_0x555ef7}),await _0x2ab8b3[_0x1b1684(0x8a)](_0x904350,{'image':{'url':_0x1b1684(0x75)},'caption':_0x1b1684(0x78)},{'quoted':_0x555ef7}),await _0x2ab8b3['sendMessage'](_0x904350,{'image':{'url':_0x1b1684(0x6d)},'caption':_0x1b1684(0x78)},{'quoted':_0x555ef7}),await _0x2ab8b3[_0x1b1684(0x8a)](_0x904350,{'image':{'url':_0x1b1684(0x74)},'caption':_0x1b1684(0x78)},{'quoted':_0x555ef7}),await _0x2ab8b3[_0x1b1684(0x8a)](_0x904350,{'image':{'url':'https://i.waifu.pics/QQW7VKy.jpg'},'caption':_0x1b1684(0x78)},{'quoted':_0x555ef7});}catch(_0x3cb497){console[_0x1b1684(0x85)](_0x3cb497),_0x43fdb6(''+_0x3cb497);}}),cmd({'pattern':'anime2','desc':_0xc1aca5(0x8d),'react':'🧚‍♀️','category':_0xc1aca5(0x6b),'filename':__filename},async(_0x1c3812,_0x2ac0b5,_0x339bdf,{from:_0x4aea60,quoted:_0xb91821,body:_0xe56a11,isCmd:_0x4a64a2,command:_0x257bf8,args:_0x477978,q:_0x375dd8,isGroup:_0x20f767,sender:_0x180e46,senderNumber:_0x3822a4,botNumber2:_0xfc193c,botNumber:_0x44a77a,pushname:_0x84e514,isMe:_0x158a12,isOwner:_0x602b09,groupMetadata:_0x2d0be9,groupName:_0xf2c376,participants:_0x58e426,groupAdmins:_0x36b636,isBotAdmins:_0x445df2,isAdmins:_0xf04383,reply:_0x126b55})=>{const _0x4dac12=_0xc1aca5;try{await _0x1c3812['sendMessage'](_0x4aea60,{'image':{'url':_0x4dac12(0x81)},'caption':_0x4dac12(0x78)},{'quoted':_0x2ac0b5}),await _0x1c3812[_0x4dac12(0x8a)](_0x4aea60,{'image':{'url':_0x4dac12(0x70)},'caption':_0x4dac12(0x78)},{'quoted':_0x2ac0b5}),await _0x1c3812[_0x4dac12(0x8a)](_0x4aea60,{'image':{'url':'https://i.waifu.pics/0hx-3AP.png'},'caption':'*ꜱʜᴀᴅᴏᴡ\x20ᴍᴅ\x20ꜰᴀᴠ\x20ᴀɴɪᴍᴇ➤*'},{'quoted':_0x2ac0b5}),await _0x1c3812[_0x4dac12(0x8a)](_0x4aea60,{'image':{'url':_0x4dac12(0x8b)},'caption':_0x4dac12(0x78)},{'quoted':_0x2ac0b5}),await _0x1c3812[_0x4dac12(0x8a)](_0x4aea60,{'image':{'url':_0x4dac12(0x6f)},'caption':_0x4dac12(0x78)},{'quoted':_0x2ac0b5});}catch(_0x13a734){console['log'](_0x13a734),_0x126b55(''+_0x13a734);}}),cmd({'pattern':_0xc1aca5(0x6a),'desc':'Animal\x20image.','react':_0xc1aca5(0x82),'category':'other','filename':__filename},async(_0x4ecdf3,_0x37f5ad,_0x48d8c6,{from:_0x277c18,quoted:_0x1bf11b,body:_0x527cfa,isCmd:_0x3e85e4,command:_0x45bac2,args:_0x392e4d,q:_0x8d55aa,isGroup:_0x208d8f,sender:_0x167103,senderNumber:_0x4e9288,botNumber2:_0x660a0d,botNumber:_0x4092d6,pushname:_0x48abcf,isMe:_0x3d7f4b,isOwner:_0x510d54,groupMetadata:_0x35234d,groupName:_0x4a55fd,participants:_0x5633a1,groupAdmins:_0x1c7e8b,isBotAdmins:_0x418a85,isAdmins:_0x2445fa,reply:_0x3910d9})=>{const _0xb8bdc3=_0xc1aca5;try{await _0x4ecdf3[_0xb8bdc3(0x8a)](_0x277c18,{'image':{'url':_0xb8bdc3(0x89)},'caption':_0xb8bdc3(0x78)},{'quoted':_0x37f5ad}),await _0x4ecdf3[_0xb8bdc3(0x8a)](_0x277c18,{'image':{'url':_0xb8bdc3(0x7e)},'caption':'*ꜱʜᴀᴅᴏᴡ\x20ᴍᴅ\x20ꜰᴀᴠ\x20ᴀɴɪᴍᴇ➤*'},{'quoted':_0x37f5ad}),await _0x4ecdf3['sendMessage'](_0x277c18,{'image':{'url':_0xb8bdc3(0x8c)},'caption':_0xb8bdc3(0x78)},{'quoted':_0x37f5ad}),await _0x4ecdf3[_0xb8bdc3(0x8a)](_0x277c18,{'image':{'url':_0xb8bdc3(0x84)},'caption':'*ꜱʜᴀᴅᴏᴡ\x20ᴍᴅ\x20ꜰᴀᴠ\x20ᴀɴɪᴍᴇ➤*'},{'quoted':_0x37f5ad}),await _0x4ecdf3[_0xb8bdc3(0x8a)](_0x277c18,{'image':{'url':_0xb8bdc3(0x6e)},'caption':'*ꜱʜᴀᴅᴏᴡ\x20ᴍᴅ\x20ꜰᴀᴠ\x20ᴀɴɪᴍᴇ➤*'},{'quoted':_0x37f5ad});}catch(_0x5a9bff){console[_0xb8bdc3(0x85)](_0x5a9bff),_0x3910d9(''+_0x5a9bff);}}),cmd({'pattern':_0xc1aca5(0x83),'desc':_0xc1aca5(0x8d),'react':_0xc1aca5(0x82),'category':_0xc1aca5(0x6b),'filename':__filename},async(_0x197d74,_0x26561f,_0x1e630c,{from:_0x1bc6c0,quoted:_0x1723bc,body:_0x2223a1,isCmd:_0x25dc24,command:_0x294f35,args:_0xe4a1ba,q:_0x110432,isGroup:_0x26362b,sender:_0x5e67c1,senderNumber:_0x216461,botNumber2:_0x20823d,botNumber:_0x595048,pushname:_0x3771cd,isMe:_0x2e74dd,isOwner:_0x14c2d7,groupMetadata:_0x4234f7,groupName:_0x150f4c,participants:_0x58a19d,groupAdmins:_0x2424e2,isBotAdmins:_0x3d9b02,isAdmins:_0x283435,reply:_0x504333})=>{const _0x236d14=_0xc1aca5;try{await _0x197d74['sendMessage'](_0x1bc6c0,{'image':{'url':_0x236d14(0x7c)},'caption':_0x236d14(0x78)},{'quoted':_0x26561f}),await _0x197d74[_0x236d14(0x8a)](_0x1bc6c0,{'image':{'url':_0x236d14(0x87)},'caption':_0x236d14(0x78)},{'quoted':_0x26561f}),await _0x197d74[_0x236d14(0x8a)](_0x1bc6c0,{'image':{'url':_0x236d14(0x80)},'caption':_0x236d14(0x78)},{'quoted':_0x26561f}),await _0x197d74['sendMessage'](_0x1bc6c0,{'image':{'url':'https://i.waifu.pics/V8hvqfK.jpg'},'caption':_0x236d14(0x78)},{'quoted':_0x26561f}),await _0x197d74['sendMessage'](_0x1bc6c0,{'image':{'url':'https://i.waifu.pics/lMiXE7j.png'},'caption':_0x236d14(0x78)},{'quoted':_0x26561f});}catch(_0x1136ce){console['log'](_0x1136ce),_0x504333(''+_0x1136ce);}}),cmd({'pattern':'anime5','desc':_0xc1aca5(0x8d),'react':_0xc1aca5(0x82),'category':_0xc1aca5(0x6b),'filename':__filename},async(_0x36fe79,_0x4b9219,_0x35c018,{from:_0x5157d4,quoted:_0x5c9522,body:_0x1391e0,isCmd:_0x25fa9d,command:_0x44905b,args:_0x31795b,q:_0x6da3cb,isGroup:_0x38f582,sender:_0x27ed9f,senderNumber:_0x1946f5,botNumber2:_0x347187,botNumber:_0x2574a8,pushname:_0xb35494,isMe:_0x5049e8,isOwner:_0x113ffb,groupMetadata:_0x25a719,groupName:_0x55d587,participants:_0x97d29d,groupAdmins:_0x3a5a3d,isBotAdmins:_0x44ef70,isAdmins:_0x5a0110,reply:_0x4d38d2})=>{const _0x54006e=_0xc1aca5;try{await _0x36fe79[_0x54006e(0x8a)](_0x5157d4,{'image':{'url':_0x54006e(0x71)},'caption':_0x54006e(0x78)},{'quoted':_0x4b9219}),await _0x36fe79[_0x54006e(0x8a)](_0x5157d4,{'image':{'url':_0x54006e(0x7a)},'caption':'*ꜱʜᴀᴅᴏᴡ\x20ᴍᴅ\x20ꜰᴀᴠ\x20ᴀɴɪᴍᴇ➤*'},{'quoted':_0x4b9219}),await _0x36fe79['sendMessage'](_0x5157d4,{'image':{'url':'https://i.waifu.pics/3x~ovC6.jpg'},'caption':_0x54006e(0x78)},{'quoted':_0x4b9219}),await _0x36fe79['sendMessage'](_0x5157d4,{'image':{'url':'https://i.waifu.pics/brv-GJu.jpg'},'caption':_0x54006e(0x78)},{'quoted':_0x4b9219}),await _0x36fe79['sendMessage'](_0x5157d4,{'image':{'url':'https://i.waifu.pics/FWE8ggD.png'},'caption':_0x54006e(0x78)},{'quoted':_0x4b9219});}catch(_0x30f9f8){console[_0x54006e(0x85)](_0x30f9f8),_0x4d38d2(''+_0x30f9f8);}});
