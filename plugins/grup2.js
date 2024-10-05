@@ -72,7 +72,7 @@ try{
                                   
          let users = mek.mentionedJid ? mek.mentionedJid : mek.quoted ? mek.quoted.sender : q.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
 		await conn.groupParticipantsUpdate(mek.chat, [users], 'promote').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
-	reply('🛑 GROUP ADMIN PROMOTE BY MY BOT OWNER')
+	reply('✅ GROUP ADMIN PROMOTE BY MY BOT OWNER')
 await conn.sendMessage(from, { react: { text: `✅`, key: mek.key }}) 
 } catch (e) {
 reply('*successful✓✓*')
@@ -99,7 +99,7 @@ try{
                                   
          	let users = mek.mentionedJid ? mek.mentionedJid : mek.quoted ? mek.quoted.sender : q.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
 		await conn.groupParticipantsUpdate(mek.chat, [users], 'demote').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
-reply('🛑 GROUP ADMIN DEMOTE BY MY BOT OWNER')
+reply('✅ GROUP ADMIN DEMOTE BY MY BOT OWNER')
 await conn.sendMessage(from, { react: { text: `✅`, key: mek.key }}) 
 } catch (e) {
 reply('*successful✓✓*')
