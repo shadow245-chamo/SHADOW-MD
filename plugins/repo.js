@@ -15,16 +15,16 @@ let dec = `*👋 Hello ${pushname}*
 
 * 🗿REPO LINK 💡*
 
-🧙‍♂️◦https://github.com/QUEEN-KYLIE-MD-01/QUEEN-KYLIE-MD/tree/main
+🧙‍♂️ ➤https://github.com/Shadowteach/SHADOW-MD.git
 
-*📍PLEASE FOLLOW MY WHATSAPP CHANNEL❤️‍🔥👇*
+*👾 ➤ PLEASE FOLLOW MY WHATSAPP CHANNEL👇*
 
-🧚‍♀️◦ https://whatsapp.com/channel/0029VaiTjMlK5cDLek3bB533
+💡 ➤https://whatsapp.com/channel/0029Vajn0gb8F2pFh7PDqO0c
 
 *ꜱʜᴀᴅᴏᴡ ᴍᴅ ᴍᴀɪɴ ᴏᴡɴᴇʀ ➤*
 
 `
-await conn.sendMessage(from,{image:{url: `https://telegra.ph/file/46873ff90be79238e56e0.jpg`},caption:dec},{quoted:mek});
+await conn.sendMessage(from,{image:{url: `https://i.imgur.com/pJ5WluK.jpeg`},caption:dec},{quoted:mek});
 
 }catch(e){
 console.log(e)
