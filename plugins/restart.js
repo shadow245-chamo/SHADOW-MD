@@ -3,16 +3,17 @@ const {cmd , commands} = require('../command')
 const {sleep} = require('../lib/functions')
 
 cmd({
-    pattern: "reset",
-    desc: "restart the bot QUEEN-KYLIE-MD",
-    category: "owner",
+    pattern: "restart",
     react: "👾",
+    desc: "restart the bot",
+    category: "owner",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
+if(!isOwner) return
 const {exec} = require("child_process")
-reply("restarting shadow-md bot..")
+reply("restarting shadow md bot..")
 await sleep(1500)
 exec("pm2 restart all")
 }catch(e){
