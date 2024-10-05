@@ -1,278 +1,44 @@
-const config = require('../config')
-const os = require('os')
-const {
-    cmd,
-    commands
-} = require('../command')
-const {
-    getBuffer,
-    getGroupAdmins,
-    getRandom,
-    h2k,
-    isUrl,
-    Json,
-    runtime,
-    sleep,
-    fetchJson
-} = require('../lib/functions')
-cmd({
-        pattern: "alive",
-        react: "💭",
-        alias: ["online", "test", "bot"],
-        desc: "Check bot online or no.",
-        category: "other",
-        use: '.alive',
-        filename: __filename
-    },
-    async (conn, mek, m, {
-        from,
-        prefix,
-        pushname,
-        reply
-    }) => {
-        try {
-            if (os.hostname().length == 12) hostname = 'replit'
-            else if (os.hostname().length == 36) hostname = 'heroku'
-            else if (os.hostname().length == 8) hostname = 'koyeb'
-            else hostname = os.hostname()
-            let monspace = '```'
-            const sssf = `${monspace}👋 Hello ${pushname} I'm alive now${monspace}
+//══════════════════════════════════════════════════════════════════════════════════════════════════════//
+//                                                                                                      //
+//                                   // 𝗦𝗛𝗔𝗗𝗢𝗪  𝐁𝐎𝐓                                                 //
+//                                                                                                      //
+//                                         Ｖ：6.0                                                       //
 
-*👨‍💻 Im SHADOW-MD whatsapp bot 👨‍💻*
-╭────────●●►   
-> *Version:* ${require("../package.json").version}
-> *Memory:* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-> *Runtime:* ${runtime(process.uptime())}
-> *Platform:* ${hostname}
-╰────────────────────●●►   
-*🚀 WELCOM TO SHADOW MD 🚀*
-*❯ Welcome Shado md whats app bot you can download video songs and various videos through this bot. Shado md owner is Lakshan Damayantha.. It also gives you the ability to solve the new revolution in technology and technology problems and there is great potential here. This technology is also related to AI.*
-`
+//
+//──────────────────────────────────────//──────────────────────────────────────
+//
 
-            let buttons = [{
-                    name: "cta_url",
-                    buttonParamsJson: JSON.stringify({
-                        display_text: config.BTN,
-                        url: config.BTNURL,
-                        merchant_url: config.BTNURL
-                    }),
-                },
-                {
-                    name: "quick_reply",
-                    buttonParamsJson: JSON.stringify({
-                        display_text: "Get Menu",
-                        id: ".menu"
-                    }),
-                }
-            ]
-            let opts = {
-                image: `https://i.imgur.com/Mkp0Z9o.jpeg`,
-                header: '',
-                footer: config.FOOTER,
-                body: sssf
+//░██████╗██╗░░██╗░█████╗░██████╗░░█████╗░░██╗░░░░░░░██╗
+//██╔════╝██║░░██║██╔══██╗██╔══██╗██╔══██╗░██║░░██╗░░██║
+//╚█████╗░███████║███████║██║░░██║██║░░██║░╚██╗████╗██╔╝
+//░╚═══██╗██╔══██║██╔══██║██║░░██║██║░░██║░░████╔═████║░
+//██████╔╝██║░░██║██║░░██║██████╔╝╚█████╔╝░░╚██╔╝░╚██╔╝░
+//╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═════╝░░╚════╝░░░░╚═╝░░░╚═╝░░
 
-            }
-         
-	await conn.sendMessage(from, {
-            audio: { url: 'https://github.com/Shadowteach/shadow-raw/raw/refs/heads/main/BUTTON%20ALIVE.mp3' },
-            mimetype: 'audio/mp4',
-            ptt: true
-        }, { quoted: mek });
-	
-	return await conn.sendButtonMessage(from, buttons, m, opts)	
-	await conn.sendMessage(from, {
-text: commandList,
-  contextInfo: {
-    mentionedJid: [ '' ],
-    groupMentions: [],
-    forwardingScore: 1111,
-    isForwarded: true,
-    forwardedNewsletterMessageInfo: {
-      newsletterJid: '120363316527550485@newsletter',
-      serverMessageId: 127
-    },
-externalAdReply: { 
-title: 'ꜱʜᴀᴅᴏᴡ ᴍᴅ ᴡᴀᴛꜱ ᴀᴘᴘ ʙᴏᴛ ⚟',
-body: 'ᴀ ꜱɪᴍᴘʟᴇ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ',
-mediaType: 1,
-sourceUrl: "https://whatsapp.com/channel/0029Vajn0gb8F2pFh7PDqO0c" ,
-thumbnailUrl: `https://i.imgur.com/2p7gHUD.jpeg` ,
-renderLargerThumbnail: true,
-showAdAttribution: false
-}
-}}, { quoted: mek})
-    } catch (e) {
-        reply('*Error !!*')
-        console.log(e)
-    }
-})
-//===================others=====//
-cmd({
-        pattern: "ping",
-        react: "📟",
-        alias: ["speed"],
-        desc: "Check bot\'s ping",
-        category: "other",
-        use: '.ping',
-        filename: __filename
-    },
-    async (conn, mek, m, {
-        from,
-        reply
-    }) => {
-        try {
-            let inital = new Date().getTime();
-            let ping = await conn.sendMessage(from, {
-                text: '```Pinging To index.js!!!```'
-            }, {
-                quoted: mek
-            })
-            let final = new Date().getTime();
-            return await conn.edit(ping, '*Pong*\n *' + (final - inital) + ' ms* ')
-	} catch (e) {
-            reply('*Error !!*')
-            console.log(e)
-        }
-    })
+//███╗░░░███╗██████╗░
+//████╗░████║██╔══██╗
+//██╔████╔██║██║░░██║
+//██║╚██╔╝██║██║░░██║
+//██║░╚═╝░██║██████╔╝
+//╚═╝░░░░░╚═╝╚═════╝░
 
-cmd({
-    pattern: "menu",
-    react: "🗃️",
-    alias: ["panel", "list", "commands", "cmd"],
-    desc: "Get bot\'s command list.",
-    category: "main",
-    use: '.menu',
-    filename: __filename
-}, async (conn, mek, m, { from, prefix, pushname, reply }) => {
-    try {
-        let wm = `ꜱʜᴀᴅᴏᴡ ᴍᴅ ᴡᴀᴛꜱ ᴀᴘᴘ ʙᴏᴛ ⚟`
-        if (os.hostname().length == 12) hostname = 'replit'
-        else if (os.hostname().length == 36) hostname = 'heroku'
-        else if (os.hostname().length == 8) hostname = 'koyeb'
-        else hostname = os.hostname()
-        let monspace = '```'
-            const MNG = `ꜱʜᴀᴅᴏᴡ ᴍᴅ ᴡᴀᴛꜱ ᴀᴘᴘ ʙᴏᴛ ⚟
-	    
-${monspace}👋😸 Hello ${pushname}${monspace}
+//██╗░░░██╗███████╗██████╗░░██████╗██╗░█████╗░███╗░░██╗
+//██║░░░██║██╔════╝██╔══██╗██╔════╝██║██╔══██╗████╗░██║
+//╚██╗░██╔╝█████╗░░██████╔╝╚█████╗░██║██║░░██║██╔██╗██║
+//░╚████╔╝░██╔══╝░░██╔══██╗░╚═══██╗██║██║░░██║██║╚████║
+//░░╚██╔╝░░███████╗██║░░██║██████╔╝██║╚█████╔╝██║░╚███║
+//░░░╚═╝░░░╚══════╝╚═╝░░╚═╝╚═════╝░╚═╝░╚════╝░╚═╝░░╚══╝
 
-╭────────●●►
- *🚀𝙑𝙀𝙍𝙎𝙄𝙊𝙉:* ${require("../package.json").version}
- *⌛𝙈𝙀𝙈𝙊𝙍𝙔:* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
- *📍𝙋𝙇𝘼𝙏𝙁𝙊𝙍𝙈:* ${hostname}
- *🕒𝙍𝙐𝙉𝙏𝙄𝙈𝙀:* ${runtime(process.uptime())}
-╰────────────────────●●►
-*💭 ➤New version shadow md is very smart and developed with technical technology and java script, the owner takes care to update it from year to year to help the users to get various benefits We apologize if there are any problems with Shado md is, owner Lakshan damayantha 🚀💗👨‍🚀*
-`
-            const categories = [];
-        const categoryMap = new Map();
+//░█████╗░██╗░░░██╗
+//██╔═══╝░██║░░░██║
+//██████╗░╚██╗░██╔╝
+//██╔══██╗░╚████╔╝░
+//╚█████╔╝░░╚██╔╝░░
+//░╚════╝░░░░╚═╝░░░
+//══════════════════════════════════════════════════════════════════════════════════════════════════════//
+//*
+//  * @project_name : SHADOW-MD
+//  * @author : LAKSHAN DAMAYANTHA
+//  * @description : SHADOW ,A Multi-functional whatsapp user bot.
 
-        for (let i = 0; i < commands.length; i++) {
-            const cmd = commands[i];
-            if (!cmd.dontAddCommandList && cmd.pattern !== undefined) {
-                const category = cmd.category.toUpperCase();
-                if (!categoryMap.has(category)) {
-                    categories.push(category);
-                    categoryMap.set(category, []);
-                }
-                categoryMap.get(category).push(cmd.pattern);
-            }
-        }
-
-        const rows = []
-        for (const category of categories) {
-            rows.push({
-                header: '',
-                title: `${category} MENU`,
-                description: '',
-                id: `${prefix}category ${category}`
-            })
-        }
-
-        let buttons = [{
-                name: "cta_url",
-                    buttonParamsJson: JSON.stringify({
-                        display_text: '',
-                        url: 'https://whatsapp.com/channel/0029Vajn0gb8F2pFh7PDqO0c',
-                        merchant_url: 'https://whatsapp.com/channel/0029Vajn0gb8F2pFh7PDqO0c'
-                }),
-            },
-            {
-                name: "single_select",
-                buttonParamsJson: JSON.stringify({
-                    title: 'SHADOW MD BOT MAIN MENU',
-                    sections: [{
-                        title: 'Please select a SubMenu',
-                        highlight_label: 'ꜱʜᴀᴅᴏᴡ-ᴍᴅ',
-                        rows: rows
-                    }]
-                }),
-            }
-        ]
-
-        let opts = {
-            image: `https://i.imgur.com/NAK3YWD.jpeg`,
-            header: '',
-            footer: wm,
-            body: MNG
-        }
-
-	    await conn.sendMessage(from, {
-            audio: { url: 'https://github.com/Shadowteach/shadow-raw/raw/refs/heads/main/NEW%20BUTTONS%20MENU%20.mp3' },
-            mimetype: 'audio/mp4',
-            ptt: true
-        }, { quoted: mek });
-        
-	    return await conn.sendButtonMessage(from, buttons, m, opts)
-   
-    } catch (e) {
-        reply('*Error !!*')
-        console.log(e)
-    }
-})
-
-cmd({
-    pattern: "category",
-    dontAddCommandList: true,
-    filename: __filename
-}, async (conn, mek, m, { from, q, reply }) => {
-    try {
-        let wm = '*ꜱʜᴀᴅᴏᴡ ᴍᴅ ᴡᴀᴛꜱ ᴀᴘᴘ ʙᴏᴛ ⚟*'
-        const category = q.trim().toUpperCase();
-        let commandList = `*◈╾──────${category} SUB COMMAND LIST──────╼◈*\n\n> Select you want command type and enjoy shadow md whatsapp bot 👨‍💻\n\n`;
-
-        for (let i = 0; i < commands.length; i++) {
-            const cmd = commands[i];
-            if (cmd.category.toUpperCase() === category) {
-                commandList += `╭────────●●►\n│ • *${cmd.pattern}* \n╰────────────────────●●►\n`;
-            }
-        }
-
-        commandList += `\n⭓ *Total Commands List ${category}*: ${commands.filter(cmd => cmd.category.toUpperCase() === category).length}\n\n${wm}`
-
-        //await conn.sendMessage(from, { text: commandList }, { quoted: mek });
-        await conn.sendMessage(from, {
-text: commandList,
-  contextInfo: {
-    mentionedJid: [ '' ],
-    groupMentions: [],
-    forwardingScore: 1111,
-    isForwarded: true,
-    forwardedNewsletterMessageInfo: {
-      newsletterJid: '120363316527550485@newsletter',
-      serverMessageId: 127
-    },
-externalAdReply: { 
-title: 'ꜱʜᴀᴅᴏᴡ ᴍᴅ ᴡᴀᴛꜱ ᴀᴘᴘ ʙᴏᴛ ⚟',
-body: 'ᴀ ꜱɪᴍᴘʟᴇ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ',
-mediaType: 1,
-sourceUrl: "https://whatsapp.com/channel/0029Vajn0gb8F2pFh7PDqO0c" ,
-thumbnailUrl: `https://i.imgur.com/2p7gHUD.jpeg` ,
-renderLargerThumbnail: true,
-showAdAttribution: false
-}
-}}, { quoted: mek})
-    } catch (e) {
-        reply('*Error !!*')
-        console.log(e)
-    }
-})
+const _0x3ad9e5=_0x2f64;(function(_0x1ce4f2,_0x392a12){const _0x5ede79=_0x2f64,_0x3f277c=_0x1ce4f2();while(!![]){try{const _0x4c00be=-parseInt(_0x5ede79(0xc5))/0x1*(-parseInt(_0x5ede79(0x10b))/0x2)+parseInt(_0x5ede79(0xf2))/0x3+parseInt(_0x5ede79(0xc0))/0x4+-parseInt(_0x5ede79(0xc8))/0x5*(-parseInt(_0x5ede79(0xee))/0x6)+parseInt(_0x5ede79(0xbd))/0x7+-parseInt(_0x5ede79(0xfe))/0x8+-parseInt(_0x5ede79(0x111))/0x9;if(_0x4c00be===_0x392a12)break;else _0x3f277c['push'](_0x3f277c['shift']());}catch(_0x1b8f36){_0x3f277c['push'](_0x3f277c['shift']());}}}(_0x3653,0xc552b));const config=require(_0x3ad9e5(0xde)),os=require('os'),{cmd,commands}=require(_0x3ad9e5(0x10d)),{getBuffer,getGroupAdmins,getRandom,h2k,isUrl,Json,runtime,sleep,fetchJson}=require('../lib/functions');function _0x2f64(_0x4ae065,_0x391ff2){const _0x365329=_0x3653();return _0x2f64=function(_0x2f643e,_0xc0dc4f){_0x2f643e=_0x2f643e-0xb9;let _0x332aee=_0x365329[_0x2f643e];return _0x332aee;},_0x2f64(_0x4ae065,_0x391ff2);}cmd({'pattern':'alive','react':'💭','alias':[_0x3ad9e5(0xf8),_0x3ad9e5(0xdc),_0x3ad9e5(0x101)],'desc':_0x3ad9e5(0xe1),'category':_0x3ad9e5(0xfc),'use':_0x3ad9e5(0x10e),'filename':__filename},async(_0x28d358,_0x35671f,_0x173c9a,{from:_0x53c488,prefix:_0x27401f,pushname:_0x28e7c3,reply:_0x1132ac})=>{const _0x26a127=_0x3ad9e5;try{if(os[_0x26a127(0x109)]()[_0x26a127(0x100)]==0xc)hostname='replit';else{if(os[_0x26a127(0x109)]()[_0x26a127(0x100)]==0x24)hostname=_0x26a127(0x116);else{if(os[_0x26a127(0x109)]()['length']==0x8)hostname=_0x26a127(0xf7);else hostname=os[_0x26a127(0x109)]();}}let _0x567045=_0x26a127(0xf4);const _0x4e2c14=_0x567045+'👋\x20Hello\x20'+_0x28e7c3+_0x26a127(0xe4)+_0x567045+_0x26a127(0xe2)+require(_0x26a127(0xd5))[_0x26a127(0xff)]+_0x26a127(0xe3)+(process[_0x26a127(0x10c)]()[_0x26a127(0xc1)]/0x400/0x400)[_0x26a127(0xda)](0x2)+'MB\x20/\x20'+Math[_0x26a127(0xfb)](require('os')['totalmem']/0x400/0x400)+_0x26a127(0xbb)+runtime(process['uptime']())+_0x26a127(0xbc)+hostname+_0x26a127(0xd1);let _0x3bc17e=[{'name':_0x26a127(0x103),'buttonParamsJson':JSON[_0x26a127(0xd8)]({'display_text':config[_0x26a127(0xcf)],'url':config[_0x26a127(0x108)],'merchant_url':config['BTNURL']})},{'name':'quick_reply','buttonParamsJson':JSON[_0x26a127(0xd8)]({'display_text':_0x26a127(0xcb),'id':_0x26a127(0xd2)})}],_0x316343={'image':_0x26a127(0xca),'header':'','footer':config[_0x26a127(0x104)],'body':_0x4e2c14};await _0x28d358['sendMessage'](_0x53c488,{'audio':{'url':_0x26a127(0xba)},'mimetype':_0x26a127(0xe8),'ptt':!![]},{'quoted':_0x35671f});return await _0x28d358[_0x26a127(0xf1)](_0x53c488,_0x3bc17e,_0x173c9a,_0x316343);await _0x28d358[_0x26a127(0xf0)](_0x53c488,{'text':commandList,'contextInfo':{'mentionedJid':[''],'groupMentions':[],'forwardingScore':0x457,'isForwarded':!![],'forwardedNewsletterMessageInfo':{'newsletterJid':'120363316527550485@newsletter','serverMessageId':0x7f},'externalAdReply':{'title':'ꜱʜᴀᴅᴏᴡ\x20ᴍᴅ\x20ᴡᴀᴛꜱ\x20ᴀᴘᴘ\x20ʙᴏᴛ\x20⚟','body':_0x26a127(0xdb),'mediaType':0x1,'sourceUrl':_0x26a127(0x107),'thumbnailUrl':'https://i.imgur.com/2p7gHUD.jpeg','renderLargerThumbnail':!![],'showAdAttribution':![]}}},{'quoted':_0x35671f});}catch(_0x62e85e){_0x1132ac('*Error\x20!!*'),console['log'](_0x62e85e);}}),cmd({'pattern':_0x3ad9e5(0xe7),'react':'📟','alias':[_0x3ad9e5(0xe9)],'desc':_0x3ad9e5(0xb9),'category':_0x3ad9e5(0xfc),'use':_0x3ad9e5(0x115),'filename':__filename},async(_0x5f5151,_0x575c70,_0x38c1fd,{from:_0x33ca5b,reply:_0x45dc67})=>{const _0x298d84=_0x3ad9e5;try{let _0x386513=new Date()[_0x298d84(0x106)](),_0x381907=await _0x5f5151[_0x298d84(0xf0)](_0x33ca5b,{'text':_0x298d84(0xfa)},{'quoted':_0x575c70}),_0x2cd329=new Date()[_0x298d84(0x106)]();return await _0x5f5151[_0x298d84(0xd3)](_0x381907,_0x298d84(0xce)+(_0x2cd329-_0x386513)+'\x20ms*\x20');}catch(_0x4b72f4){_0x45dc67('*Error\x20!!*'),console[_0x298d84(0xbe)](_0x4b72f4);}}),cmd({'pattern':'menu','react':'🗃️','alias':[_0x3ad9e5(0xc2),_0x3ad9e5(0xf9),_0x3ad9e5(0xd0),_0x3ad9e5(0xc7)],'desc':_0x3ad9e5(0xcc),'category':_0x3ad9e5(0xdd),'use':_0x3ad9e5(0xd2),'filename':__filename},async(_0x5ba341,_0xda512,_0x5cb631,{from:_0x6e301a,prefix:_0x4c3915,pushname:_0x3a95b7,reply:_0x3b7373})=>{const _0x23cefa=_0x3ad9e5;try{let _0x4a820d=_0x23cefa(0xcd);if(os[_0x23cefa(0x109)]()['length']==0xc)hostname=_0x23cefa(0xc6);else{if(os[_0x23cefa(0x109)]()[_0x23cefa(0x100)]==0x24)hostname=_0x23cefa(0x116);else{if(os[_0x23cefa(0x109)]()[_0x23cefa(0x100)]==0x8)hostname='koyeb';else hostname=os[_0x23cefa(0x109)]();}}let _0x3147b5=_0x23cefa(0xf4);const _0x4f55c8=_0x23cefa(0xed)+_0x3147b5+_0x23cefa(0xeb)+_0x3a95b7+_0x3147b5+_0x23cefa(0xea)+require(_0x23cefa(0xd5))[_0x23cefa(0xff)]+_0x23cefa(0xec)+(process[_0x23cefa(0x10c)]()['heapUsed']/0x400/0x400)['toFixed'](0x2)+'MB\x20/\x20'+Math[_0x23cefa(0xfb)](require('os')[_0x23cefa(0xd9)]/0x400/0x400)+_0x23cefa(0x102)+hostname+'\x0a\x0a\x20*🕒𝙍𝙐𝙉𝙏𝙄𝙈𝙀:*\x20'+runtime(process[_0x23cefa(0x112)]())+_0x23cefa(0x110),_0x542125=[],_0xf126b7=new Map();for(let _0x32d328=0x0;_0x32d328<commands['length'];_0x32d328++){const _0x3a1d75=commands[_0x32d328];if(!_0x3a1d75[_0x23cefa(0x10a)]&&_0x3a1d75[_0x23cefa(0x118)]!==undefined){const _0x4fe045=_0x3a1d75['category'][_0x23cefa(0xdf)]();!_0xf126b7[_0x23cefa(0xbf)](_0x4fe045)&&(_0x542125[_0x23cefa(0x10f)](_0x4fe045),_0xf126b7[_0x23cefa(0xc3)](_0x4fe045,[])),_0xf126b7['get'](_0x4fe045)[_0x23cefa(0x10f)](_0x3a1d75[_0x23cefa(0x118)]);}}const _0x316591=[];for(const _0x4e8634 of _0x542125){_0x316591['push']({'header':'','title':_0x4e8634+_0x23cefa(0x117),'description':'','id':_0x4c3915+_0x23cefa(0xc4)+_0x4e8634});}let _0x339c2c=[{'name':_0x23cefa(0x103),'buttonParamsJson':JSON[_0x23cefa(0xd8)]({'display_text':'','url':'https://whatsapp.com/channel/0029Vajn0gb8F2pFh7PDqO0c','merchant_url':_0x23cefa(0x107)})},{'name':_0x23cefa(0xe5),'buttonParamsJson':JSON['stringify']({'title':_0x23cefa(0xf3),'sections':[{'title':'Please\x20select\x20a\x20SubMenu','highlight_label':'ꜱʜᴀᴅᴏᴡ-ᴍᴅ','rows':_0x316591}]})}],_0x345fab={'image':_0x23cefa(0xef),'header':'','footer':_0x4a820d,'body':_0x4f55c8};return await _0x5ba341[_0x23cefa(0xf0)](_0x6e301a,{'audio':{'url':_0x23cefa(0x113)},'mimetype':_0x23cefa(0xe8),'ptt':!![]},{'quoted':_0xda512}),await _0x5ba341[_0x23cefa(0xf1)](_0x6e301a,_0x339c2c,_0x5cb631,_0x345fab);}catch(_0xde7795){_0x3b7373(_0x23cefa(0xe6)),console[_0x23cefa(0xbe)](_0xde7795);}}),cmd({'pattern':'category','dontAddCommandList':!![],'filename':__filename},async(_0x1abf15,_0x1ad601,_0x171b8b,{from:_0x15aab2,q:_0x249518,reply:_0x61c7fe})=>{const _0x1d0dd1=_0x3ad9e5;try{let _0x1c7f8d=_0x1d0dd1(0xf5);const _0x3d04b5=_0x249518[_0x1d0dd1(0xd4)]()[_0x1d0dd1(0xdf)]();let _0x30a763='*◈╾──────'+_0x3d04b5+_0x1d0dd1(0x114);for(let _0xc2a27c=0x0;_0xc2a27c<commands['length'];_0xc2a27c++){const _0x5b5486=commands[_0xc2a27c];_0x5b5486[_0x1d0dd1(0xf6)][_0x1d0dd1(0xdf)]()===_0x3d04b5&&(_0x30a763+=_0x1d0dd1(0xd6)+_0x5b5486['pattern']+_0x1d0dd1(0xe0));}_0x30a763+=_0x1d0dd1(0x105)+_0x3d04b5+_0x1d0dd1(0xfd)+commands[_0x1d0dd1(0xc9)](_0x5c81bd=>_0x5c81bd['category'][_0x1d0dd1(0xdf)]()===_0x3d04b5)[_0x1d0dd1(0x100)]+'\x0a\x0a'+_0x1c7f8d,await _0x1abf15[_0x1d0dd1(0xf0)](_0x15aab2,{'text':_0x30a763,'contextInfo':{'mentionedJid':[''],'groupMentions':[],'forwardingScore':0x457,'isForwarded':!![],'forwardedNewsletterMessageInfo':{'newsletterJid':_0x1d0dd1(0xd7),'serverMessageId':0x7f},'externalAdReply':{'title':_0x1d0dd1(0xcd),'body':'ᴀ\x20ꜱɪᴍᴘʟᴇ\x20ᴡʜᴀᴛꜱᴀᴘᴘ\x20ʙᴏᴛ','mediaType':0x1,'sourceUrl':_0x1d0dd1(0x107),'thumbnailUrl':'https://i.imgur.com/2p7gHUD.jpeg','renderLargerThumbnail':!![],'showAdAttribution':![]}}},{'quoted':_0x1ad601});}catch(_0x40d3d3){_0x61c7fe(_0x1d0dd1(0xe6)),console[_0x1d0dd1(0xbe)](_0x40d3d3);}});function _0x3653(){const _0x55a003=['../config','toUpperCase','*\x20\x0a╰────────────────────●●►\x0a','Check\x20bot\x20online\x20or\x20no.','\x0a\x0a*👨‍💻\x20Im\x20SHADOW-MD\x20whatsapp\x20bot\x20👨‍💻*\x0a\x0a╭────────●●►\x20\x20\x20\x0a\x0a>\x20*Version:*\x20','\x0a\x0a>\x20*Memory:*\x20','\x20I\x27m\x20alive\x20now','single_select','*Error\x20!!*','ping','audio/mp4','speed','\x0a\x0a╭────────●●►\x0a\x0a\x20*🚀𝙑𝙀𝙍𝙎𝙄𝙊𝙉:*\x20','👋😸\x20Hello\x20','\x0a\x0a\x20*⌛𝙈𝙀𝙈𝙊𝙍𝙔:*\x20','ꜱʜᴀᴅᴏᴡ\x20ᴍᴅ\x20ᴡᴀᴛꜱ\x20ᴀᴘᴘ\x20ʙᴏᴛ\x20⚟\x0a\x0a\x09\x20\x20\x20\x20\x0a\x0a','7577670EonbyU','https://i.imgur.com/NAK3YWD.jpeg','sendMessage','sendButtonMessage','1381119fUpEfs','SHADOW\x20MD\x20BOT\x20MAIN\x20MENU','```','*ꜱʜᴀᴅᴏᴡ\x20ᴍᴅ\x20ᴡᴀᴛꜱ\x20ᴀᴘᴘ\x20ʙᴏᴛ\x20⚟*','category','koyeb','online','list','```Pinging\x20To\x20index.js!!!```','round','other','*:\x20','2282448utoAYh','version','length','bot','MB\x0a\x0a\x20*📍𝙋𝙇𝘼𝙏𝙁𝙊𝙍𝙈:*\x20','cta_url','FOOTER','\x0a⭓\x20*Total\x20Commands\x20List\x20','getTime','https://whatsapp.com/channel/0029Vajn0gb8F2pFh7PDqO0c','BTNURL','hostname','dontAddCommandList','270888YoRCcV','memoryUsage','../command','.alive','push','\x0a\x0a╰────────────────────●●►\x0a\x0a*💭\x20➤New\x20version\x20shadow\x20md\x20is\x20very\x20smart\x20and\x20developed\x20with\x20technical\x20technology\x20and\x20java\x20script,\x20the\x20owner\x20takes\x20care\x20to\x20update\x20it\x20from\x20year\x20to\x20year\x20to\x20help\x20the\x20users\x20to\x20get\x20various\x20benefits\x20We\x20apologize\x20if\x20there\x20are\x20any\x20problems\x20with\x20Shado\x20md\x20is,\x20owner\x20Lakshan\x20damayantha\x20🚀💗👨‍🚀*\x0a\x0a','15935184BmhRZD','uptime','https://github.com/Shadowteach/shadow-raw/raw/refs/heads/main/NEW%20BUTTONS%20MENU%20.mp3','\x20SUB\x20COMMAND\x20LIST──────╼◈*\x0a\x0a>\x20Select\x20you\x20want\x20command\x20type\x20and\x20enjoy\x20shadow\x20md\x20whatsapp\x20bot\x20👨‍💻\x0a\x0a','.ping','heroku','\x20MENU','pattern','Check\x20bot\x27s\x20ping','https://github.com/Shadowteach/shadow-raw/raw/refs/heads/main/BUTTON%20ALIVE.mp3','MB\x0a\x0a>\x20*Runtime:*\x20','\x0a\x0a>\x20*Platform:*\x20','4444825sLoUoa','log','has','939744sigXhu','heapUsed','panel','set','category\x20','2zHHuwN','replit','cmd','5kriwYp','filter','https://i.imgur.com/Mkp0Z9o.jpeg','Get\x20Menu','Get\x20bot\x27s\x20command\x20list.','ꜱʜᴀᴅᴏᴡ\x20ᴍᴅ\x20ᴡᴀᴛꜱ\x20ᴀᴘᴘ\x20ʙᴏᴛ\x20⚟','*Pong*\x0a\x20*','BTN','commands','\x0a\x0a╰────────────────────●●►\x20\x20\x20\x0a\x0a*🚀\x20WELCOM\x20TO\x20SHADOW\x20MD\x20🚀*\x0a\x0a*❯\x20Welcome\x20Shado\x20md\x20whats\x20app\x20bot\x20you\x20can\x20download\x20video\x20songs\x20and\x20various\x20videos\x20through\x20this\x20bot.\x20Shado\x20md\x20owner\x20is\x20Lakshan\x20Damayantha..\x20It\x20also\x20gives\x20you\x20the\x20ability\x20to\x20solve\x20the\x20new\x20revolution\x20in\x20technology\x20and\x20technology\x20problems\x20and\x20there\x20is\x20great\x20potential\x20here.\x20This\x20technology\x20is\x20also\x20related\x20to\x20AI.*\x0a\x0a','.menu','edit','trim','../package.json','╭────────●●►\x0a│\x20•\x20*','120363316527550485@newsletter','stringify','totalmem','toFixed','ᴀ\x20ꜱɪᴍᴘʟᴇ\x20ᴡʜᴀᴛꜱᴀᴘᴘ\x20ʙᴏᴛ','test','main'];_0x3653=function(){return _0x55a003;};return _0x3653();}
