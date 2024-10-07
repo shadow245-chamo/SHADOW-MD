@@ -2,7 +2,6 @@ const { cmd, commands } = require('../command');
 
 const premiumGroups = []; 
 
-
 // Command to add group to the premium list
 cmd({
     pattern: "premium",
@@ -16,7 +15,7 @@ async (conn, mek, m, { from, quoted, body, q, reply }) => {
     const isAdmin = m.participant === mek.from;
 
     if (!isAdmin) {
-        return reply("Only owner can add premium groups.\nContact Owner +94758900210");
+        return reply("Only owner can add premium groups.\nContact Owner +94767910958");
     }
 
     if (!premiumGroups.includes(from)) {
