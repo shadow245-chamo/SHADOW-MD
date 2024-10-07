@@ -59,7 +59,7 @@ cmd({
             await sticker.toBuffer();
             return conn.sendMessage(from, { sticker: buffer },
             }catch (e) {
-            console.log(e)
-            reply(`${e}`)
+            reply('*Error !!*')
+            l(e)
     }
 });
